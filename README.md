@@ -9,7 +9,7 @@ Lessons Overview:
 * [Packages and Libraries](lessons/04_introR-packages-and-libraries.md)
 * [Data manipulation 1](lessons/05_introR-data-manipulation.md)
 * [Data manipulation 2](lessons/06_introR-data-manipulation2.md)
-* [Nested functions]lessons/07_introR-nested-functions.md)
+* [Nested functions](lessons/07_introR-nested-functions.md)
 * [Matching in R](lessons/08_advR-matching.md)
 * [Plotting data](lessons/09_Rdata_visualization.md)
 
