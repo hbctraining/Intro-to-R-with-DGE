@@ -1,7 +1,8 @@
 ---
-title: "Plotting and data visualization in R (basics)"
+layout: topic
+title: Plotting and data visualization in R (basics)
 author: Mary Piper, Meeta Mistry, Radhika Khetani
-date: "Tuesday", May 9, 2017"
+date: "Tuesday, May 9, 2017"
 ---
 
 Approximate time: 45 minutes
