@@ -1,4 +1,5 @@
 ---
+layout: topic
 title: "Plotting and data visualization in R"
 author: Mary Piper, Meeta Mistry, Radhika Khetani
 date: "Tuesday", May 9, 2017"
