@@ -1,7 +1,6 @@
-# Intro-to-R
-Materials for a 2-day introduction to the R language
+# Materials for a 3-day Introduction to R and differential gene expression (DGE) analysis workshop
 
-Lessons Overview:
+### Lessons Overview:
 
 * [Intro to R and RStudio](lessons/01_introR-R-and-RStudio.md)
 * [Syntax and Data structures in R](lessons/02_introR-syntax-and-data-structures.md)
