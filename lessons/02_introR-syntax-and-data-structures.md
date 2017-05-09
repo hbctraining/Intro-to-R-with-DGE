@@ -2,15 +2,15 @@
 layout: topic
 title: R Syntax and Data Structures
 authors: Meeta Mistry, Mary Piper
-date: "Wednesday, April 19, 2017"
+date: "Tuesday, May 9, 2017"
 ---
 Approximate time: 70 min
 
 ## Learning Objectives
 
-* Become familiar with R syntax
-* Understand variables and the assignment operator in R
-* Understand the various data types and data structures in R
+* Employ variables and functions in R.
+* Describe the various data types used in R. 
+* Construct data structures to store data.
 
 ## The R syntax
 Now that we know how to talk with R via the script editor or the console, we want to use R for something more than adding numbers. To do this, we need to know more about the R syntax. 
