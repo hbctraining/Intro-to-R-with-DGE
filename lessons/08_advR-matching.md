@@ -1,13 +1,14 @@
 ---
 title: "Advanced R, matching"
 authors: Meeta Mistry, Mary Piper
-date: "Wednesday, September 28, 2016"
+date: "Tuesday, May 9, 2017"
 ---
 Approximate time: 110 min
 
 
 ## Learning Objectives
-* Learning how to match and re-order data 
+
+* Implement matching and re-ordering data within data structures.
 
 ## Matching data 
 

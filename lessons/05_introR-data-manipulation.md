@@ -1,15 +1,15 @@
 ---
 title: "Data manipulation"
 authors: Meeta Mistry, Mary Piper, Radhika Khetani
-date: "Wednesday, April 19, 2017"
+date: "Tuesday, May 9, 2017"
 ---
 Approximate time: 60 min
 
 ## Learning Objectives
-* Reading data into R
-* Inspecting data structures
-* Using indices and sequences to select data from vectors
 
+* Construct data structures to store external data in R.
+* Inspect data structures in R.
+* Demonstrate how to subset data from data structures.
 
 ## Reading data into R
 Regardless of the specific analysis in R we are performing, we usually need to bring data in for the analysis. The function in R we use will depend on the type of data file we are bringing in (e.g. text, Stata, SPSS, SAS, Excel, etc.) and how the data in that file are separated, or delimited. The table below lists functions that can be used to import data from common file formats.

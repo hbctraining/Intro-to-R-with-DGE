@@ -1,14 +1,14 @@
 ---
 title: "Data manipulation"
 authors: Meeta Mistry, Mary Piper
-date: "Wednesday, April 19, 2017"
+date: "Tuesday, May 9, 2017"
 ---
 Approximate time: 60 min
 
 ## Learning Objectives
-* Using indexes and sequences to select data from dataframes
-* Subsetting data using logical operators
-* Writing data to file
+
+* Demonstrate how to subset, merge, and create new datasets from existing data structures in R.
+* Export data tables and plots for use outside of the R environment.
 
 ### Dataframes
 
