@@ -72,7 +72,7 @@ The design formula would be:
 
 #### MOV10 DE analysis: creating design formula and running DESeq2
 
-Now that we know how to specify the model to DESeq2, we can run the differential expression pipeline on the **raw counts**. To do this, we must create a DESeqDataSet as we did in the ['Count normalization'](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/11_DGE_count_normalization.md) lesson and specify the location of our raw counts and metadata, and input our design formula:
+Now that we know how to specify the model to DESeq2, we can run the differential expression pipeline on the **raw counts**. To do this, we must create a DESeqDataSet as we did in the ['Count normalization'](hhttps://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/11_DGE_count_normalization.md#2-create-deseq2-object) lesson and specify the location of our raw counts and metadata, and input our design formula:
 
 ```r
 dds <- DESeqDataSetFromMatrix(countData = data, colData = meta, design = ~ sampletype)
