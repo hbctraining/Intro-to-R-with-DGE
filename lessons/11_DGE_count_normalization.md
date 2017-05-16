@@ -20,11 +20,11 @@ The first step in the DE analysis workflow is count normalization, which is nece
 
 The raw count data is affected by various factors that need to be accounted for and "normalized". A few of these factors are listed below:
  
- - **normalization for library size: necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher number of reads associated with it.
+ - **normalization for library size:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher number of reads associated with it.
  
     <img src="../img/sequencing_depth.png" width="400">
  
- - **normalization for gene length: necessary for comparison of expression of different genes of varying lengths within the same sample.
+ - **normalization for gene length:** necessary for comparison of expression of different genes of varying lengths within the same sample.
  
     <img src="../img/length_of_gene.png" width="400">
  
