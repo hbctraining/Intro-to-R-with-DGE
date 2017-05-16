@@ -17,7 +17,7 @@ Approximate time: 45 minutes
 
 ![ensembl_homepage](../img/ensembl_interface.png)
 
-Ensembl contains extensive genomic information and we can mine this information readily using the `Biomart` tool. You can access BioMart directly using the web interface; alternatively, there is an R package (Bioconductor), "biomaRt", available for mining Ensembl data. 
+Ensembl contains extensive genomic information and we can mine this information readily using the "BioMart" tool. You can access it directly using the web interface; alternatively, there is an R package (Bioconductor), "biomaRt", available for mining Ensembl data. 
 
 ### Biomart web interface
 
