@@ -54,12 +54,12 @@ Using RPKM/FPKM normalization, the total number of RPKM/FPKM normalized counts f
 
 | gene | sampleA | sampleB |
 | ----- |:-----:|:-----:|
-| MOV10 | 5.5 | 5.5 |
-| ABCD | 73.4 | 21.8 |
+| XCR1 | 5.5 | 5.5 |
+| WASHC1 | 73.4 | 21.8 |
 | ... | ... | ... |
 |Total RPKM-normalized counts | 1,000,000 | 1,500,000 |
 
-For example, in the table above, SampleA has a greater proportion of counts associated with MOV10 (5.5/1,000,000) than does sampleB (5.5/1,500,000) even though the RPKM count values are the same. Therefore, we cannot directly compare the counts for MOV10 (or any other gene) between sampleA and sampleB because the total number of normalized counts are different between samples. 
+For example, in the table above, SampleA has a greater proportion of counts associated with XCR1 (5.5/1,000,000) than does sampleB (5.5/1,500,000) even though the RPKM count values are the same. Therefore, we cannot directly compare the counts for XCR1 (or any other gene) between sampleA and sampleB because the total number of normalized counts are different between samples. 
 
 ### TPM (recommended)
 In contrast to RPKM/FPKM, TPM-normalized counts normalize for both sequencing depth and gene length, but have the same total TPM-normalized counts per sample. Therefore, the normalized count values are comparable both between and within samples.
@@ -78,7 +78,7 @@ For each gene, a pseudo-reference sample is created that is equal to the geometr
 | gene | sampleA | sampleB | pseudo-reference sample  |
 | ----- |:-----:|:-----:|:-----:|
 | EF2A | 1489 | 906 | sqrt(1489 * 906) = **1161.5** |
-| ABCD | 22 | 13 | sqrt(24 * 13) = **17.7** |
+| ABCD1 | 22 | 13 | sqrt(24 * 13) = **17.7** |
 | ... | ... | ... | ... |
 
 **Step 2: calculates ratio of each sample to the reference**
@@ -88,9 +88,9 @@ For every gene in a sample, the ratios (sample/ref) are calculated (as shown bel
 | gene | sampleA | sampleB | pseudo-reference sample  | ratio sampleA/ref | ratio sampleB/ref |
 | ----- |:-----:|:-----:|:-----:| :-----: | :-----: |
 | EF2A | 1489 | 906 | 1161.5 | 1489/1161.5 = **1.28** | 906/1161.5 = **0.78** |
-| ABCD | 22 | 13 | 16.9 | 22/16.9 = **1.30** | 13/16.9 = **0.77** |
-| MEF3 | 793 | 410 | 570.2 | 793/570.2 = **1.39** | 410/570.2 = **0.72**
-| BBC1 | 76 | 42 | 56.5 | 76/56.5 = **1.35** | 42/56.5 = **0.74**
+| ABCD1 | 22 | 13 | 16.9 | 22/16.9 = **1.30** | 13/16.9 = **0.77** |
+| MEFV | 793 | 410 | 570.2 | 793/570.2 = **1.39** | 410/570.2 = **0.72**
+| BAG1 | 76 | 42 | 56.5 | 76/56.5 = **1.35** | 42/56.5 = **0.74**
 | MOV10 | 521 | 1196 | 883.7 | 521/883.7 = **0.590** | 1196/883.7 = **1.35** |
 | ... | ... | ... | ... |
 
@@ -123,7 +123,7 @@ SampleB median ratio = 0.77
 | gene | sampleA | sampleB |  
 | ----- |:-----:|:-----:|
 | EF2A | 1489 | 906 | 
-| ABCD | 22 | 13 | 
+| ABCD1 | 22 | 13 | 
 | ... | ... | ... | 
 
 **Normalized Counts**
@@ -131,7 +131,7 @@ SampleB median ratio = 0.77
 | gene | sampleA | sampleB |
 | ----- |:-----:|:-----:|
 | EF2A | 1489 / 1.3 = **1145.39** | 906 / 0.77 = **1176.62** | 
-| ABCD | 22 / 1.3 = **16.92** | 13 / 0.77 = **16.88** | 
+| ABCD1 | 22 / 1.3 = **16.92** | 13 / 0.77 = **16.88** | 
 | ... | ... | ... | 
 
 > Please note that normalized count values are not whole numbers.
