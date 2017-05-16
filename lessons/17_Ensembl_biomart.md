@@ -21,7 +21,9 @@ Ensembl contains extensive genomic information and we can mine this information 
 
 ### Biomart web interface
 
-The Web interface can be accessed from the [Ensembl home page](../img/ensembl_biomart.png). If you are interested in exploring how to use the web interface, Ensembl has a [video tutorial](http://www.ensembl.org/Multi/Help/Movie?db=core;id=189) that goes over the various aspects. In this section we will focus on the R package to mine genomic information from Ensembl.
+The Web interface can be accessed from the Ensembl home page.
+
+![ensembl_biomart](../img/ensembl_biomart.png). 
 
 Briefly BioMart tool for data mining the Ensembl database requires three steps:
 
@@ -29,7 +31,9 @@ Briefly BioMart tool for data mining the Ensembl database requires three steps:
 2. **Select the type and content of input/query.** Your query can be genomic region(s), specific gene(s), known variant(s), etc.
 3. **Choose the attributes/content to output.** Depending on your query, this can be almost any related genomic information.
 
-The functions within the R package require these 3 pieces of information as well, as we will see below.
+If you are interested in exploring how to use the web interface, Ensembl has a [video tutorial](http://www.ensembl.org/Multi/Help/Movie?db=core;id=189) that goes over the various aspects. 
+
+In this section we will focus on the R package to mine genomic information from Ensembl. Please note that the functions within the R package require the 3 pieces of information listed above, as well.
 
 ### biomaRt R package
 
