@@ -1,146 +1,41 @@
 ---
-title: "Biological Databases: Ensembl/BioMart"
-author: "Mary Piper"
-date: "Monday, November 14th, 2016"
+layout: topic
+title: BioMart (Ensembl/R)
+author: Mary Piper, Radhika Khetani
+date: "Tuesday, November 14th, 2017"
 ---
 
-Contributors: Mary Piper
-
-Approximate time: 1.5 hours
+Approximate time: 45 minutes
 
 ## Learning Objectives
 
 * learn how to use features of the Ensembl biological database and genome browser to access information and data during an NGS analysis
 
-### Ensembl genome database and browser
+## Ensembl
 
-#### Overview
 [*Ensembl*](http://useast.ensembl.org/index.html) provides a website that acts as a **single point of access to annotated genomes** for vertebrate species. 
 
 ![ensembl_homepage](../img/ensembl_interface.png)
 
-- **Searching Ensembl**:  Look for a gene, location, variant and more using the search box on the homepage or the box that is provided in the top right corner of any Ensembl page.
+Ensembl contains extensive genomic information and we can mine this information readily using the `Biomart` tool. You can access BioMart directly using the web interface; alternatively, there is an R package (Bioconductor), "biomaRt", available for mining Ensembl data. 
 
-	- a gene name (for example, BRCA2) - best to use the official gene symbols ([HGNC](http://www.genenames.org))
-	- a UniProt accession number (for example, P51587)
-	- a disease name (for example, coronary heart disease)
-	- a variation (for example, rs1223)
-	- a location - a genomic region (for example, rat X:100000..200000)
-	- a PDB ID or a Gene Ontology (GO) term
+### Biomart web interface
 
-	Most search results will take you to the appropriate Ensembl view through a results page. If you search using a location you will be directed straight to the location tab (this tab provides a view of a region of a genome).
+The Web interface can be accessed from the [Ensembl home page](../img/ensembl_biomart.png). If you are interested in exploring how to use the web interface, Ensembl has a [video tutorial](http://www.ensembl.org/Multi/Help/Movie?db=core;id=189) that goes over the various aspects. In this section we will focus on the R package to mine genomic information from Ensembl.
 
-- **Browse a Genome**: Choose your species of interest in this section. The drop down menu under 'All genomes' allows you to select from the full list. The *Ensembl Pre!* site contains new genomes (either new species to Ensembl, or updates in the reference assembly) that do not yet have an Ensembl gene set.  BLAST/BLAT is available for organisms in all Ensembl sites, including Pre!
+Briefly BioMart tool for data mining the Ensembl database requires three steps:
 
-- **Help**: There is a wealth of help and documentation in Ensembl if you are new to the browser. Video tutorials are provided and printable pdfs with exercises. Custom data may be uploaded to Ensembl or displayed directly by attaching a file by URL. 
+1. **Choose a database to mine.** Options are Ensembl Gene, Ensembl Variation, Ensembl Regulation, and [Vega](https://en.wikipedia.org/wiki/Vertebrate_and_Genome_Annotation_Project) databases. You will be able to choose your species of interest within these databases.
+2. **Select the type and content of input/query.** Your query can be genomic region(s), specific gene(s), known variant(s), etc.
+3. **Choose the attributes/content to output.** Depending on your query, this can be almost any related genomic information.
 
-- **News**: To find out what release you are working with, have a look at the news section of the homepage. If the current release is not the one you need, access archive sites to access previous versions, or releases, of Ensembl using the link on the lower right side.
- 
-#### Querying Ensembl 
-Each species in Ensembl has its own home page, where you can find out who provided the genome sequence and which version of the genome assembly is represented.  
-
-1. Click on the common name of your species of interest to go to the species homepage. We’ll click on `Human`.
-
-	![ensembl_human](../img/ensembl_human.png)
-
-	Within the human genome page, find the basic features:
-
-	- Search bar for human information on gene, location, disease, etc.
-	- News for the current human genome release
-	- Information and sequences for the current human genome build
-	- Links to example features in Ensembl
-	- Guides on how to access information on comparative genomics, regulation, and variation
-
-4. In the search bar type `mov10`, and from the search results select `MOV10 (Human Gene)`. The gene page for MOV10 should populate. 
-	
-	![gene_view](../img/ensembl_mov10_gene.png)
-	
-	The `Gene` page is organized as follows:
-	
-	- The top of the page has a **gene overview**, followed by the **transcript table**. All transcripts identified using any evidence are provided in the table. The transcripts are color-coded based on whether the transcript is protein-coding or non-coding, as well as, by the quality of evidence:
-	
-		- **Gold:** protein-coding transcripts are reviewed annotations with highest confidence
-		- **Red:** protein-coding transcripts are less confident
-		- **Blue:** non-coding transcripts
-		
-		In addition to coloring, Ensembl also provides flags in the table for **"Transcript Support Levels"**, which highlight how well-supported or poorly-supported are the transcript models.
-		
-		Also provided in the table are the links to the **Consensus CoDing Sequence** sets (CCDS) for available transcripts. The CCDS is a consensus set of coding sequences established as a collaborative effort between NCBI, Ensembl, Vega, UniProt-SwissProt, and UCSC. 
-		
-		Note the Ensembl ID for the MOV10 gene is `ENSG00000155363`. Ensembl uses the following format for naming:
-	
-		- ENSG###########	Ensembl Gene ID
-		- ENST###########	Ensembl Transcript ID
-		- ENSP###########	Ensembl Peptide ID
-		- ENSE###########	Ensembl Exon ID
-	
-		For non-human species a suffix is added:
-	
-		- MUS (Mus musculus) for mouse ENSMUSG###
-		- DAR (Danio rerio) for zebrafish: ENSDARG###
-	
-
-	- Below the transcript table is a summary section with links to external databases, followed by visualization of the transcripts.
-	
-	![transcript_vis](../img/ensembl_transcripts.png)
-	
-	**NOTE:** in the visualization, the blue bar represents the genome contig, and transcripts above the bar are forward-stranded and those below are reverse.
-	
-	- The side panel has **detailed gene information** displayed as a hierarchical tree. The various categories provide detailed and downloadable gene information, including associated sequence data, regulatory regions, GO terms, comparative genomics information, and variation data.
-	
-6. Let's suppose we are interested in the MOV10-001 transcript. Click on the MOV10-001 transcript ID, `ENST00000413052`. This should open a new tab entitled `Transcript: MOV10-001` with detailed information for the transcript. 
-
-	- If you click on `exons`, the sequence for each of the exons will be displayed below. If you click on `12 domains and features` the associated domains are output. If you click on `625 variations`, all variants for the transcript are listed with variation IDs, supporting evidence, and predicted effect on protein function. Additional detailed information on the transcript and protein is available on the side panel. 
-
-7. Let's now visualize our transcripts for the gene using the `Location` tab. There are a lot of features available from this genome browser, which we cannot go into due to time limitations, but there are many tutorials available from Ensembl to learn about these features.
-
-
-## Ensembl Biomart
-
-While Ensembl contains extensive genomic information, we often want to mine the data to export a custom dataset. Ensembl offers the `Biomart` tool for accessing and mining the Ensembl database. You can access BioMart directly using the web interface; alternatively, there is an R package, "biomaRt", available for use for mining Ensembl data from R.
-
-### Web interface
-
-8. You can access BioMart from any page using the link in the menu bar.
-![biomart](../img/ensembl_biomart.png)
-
-The BioMart tool for data mining the Ensembl database is easy to use and requires three steps:
-
-1. **Choose a dataset.** The dropdown menu allows you to choose from the Ensembl Gene, Ensembl Variation, Ensembl Regulation, and Vega databases. You will then be able to choose your species of interest.
-2. **Select your filters or inputs.** You can restrict your query using various criteria, such as genomic region, specific genes, particular variants, etc.
-3. **Choose the attributes to output.** You have a wide range of attributes that you can choose your query to output, such as features, structures, and sequence information.
-
-![biomart_homepage](../img/biomart_query.png)
-
-Let’s use BioMart to obtain information on genomic location and transcript count for [this gene list](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionIV/results/sigOE_hw.txt); download this list by clicking on the link, or copy the list from your browser.
-
-#### **Step 1: Choose a dataset** 
-Click on `Dataset` and choose the database `Ensembl Genes ##` and `Homo sapiens genes(GRCh38.p#)`. 
-_**NOTE:** if we wanted to use an older version of BioMart, we could click on the lower right-hand link to `View in archive site`._
-
-#### **Step 2: Select your filters or inputs**
-Click on `Filters`. Expand `GENE` and click on the box next to `Input external references ID list`. Choose `HGNC symbol(s)` from the drop-down menu. Either choose the file `sigOE_hw.txt` or copy and paste the gene names in the file into the text box.
-
-#### **Step 3: Choose the attributes to output**
-Click on `Attributes`and keep `Features` selected.
-
-Expand `GENE` and choose the following:
-	
-	- Ensembl Gene ID
-	- Description
-	- Chromosome Name
-	- Gene Start (bp)
-	- Gene End (bp)
-	- Strand
-	- Associated Gene Name
-	- Transcript count
-
-Click on `Results` button in the upper left-hand corner. Save output to a comma-separated value (CSV) file. In the HTML table, click on the link for `MOV10` to take you to the Ensembl gene page.
+The functions within the R package require these 3 pieces of information as well, as we will see below.
 
 ### biomaRt R package
-When you are performing an NGS analysis, you often find a need to access BioMart, for example, to find genomic locations, convert gene IDs, or filter sequences from your data. Luckily for us, there is an R package for BioMart, called `biomaRt`, which allows us to perform BioMart queries from R.
 
-Let's explore BioMart functionality in R using a counts dataset with Ensembl IDs as row names. We would like to **convert the Ensembl IDs to gene names**. We can use `biomaRt` package to perform this conversion easily within R.
+This is a very convenient way to access and mine the database, since you can easily add any steps with biomart to your DGE workflow within R. 
+
+Let's explore bioMart functionality in R using the row names or the Ensembl IDs from the counts data frame. Out goal here is to **convert the Ensembl IDs to gene names**, which is something you will find yourself doing relatively frequently as you start working on large genomic datasets. 
 
 Click on the link to the [counts file](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionIV/results/counts.txt) and save it to your `data` folder.
 
