@@ -20,11 +20,11 @@ The first step in the DE analysis workflow is count normalization, which is nece
 
 The counts of mapped reads for each gene is proportional to the expression of RNA ("interesting") in addition to many other factors ("uninteresting"). The main factors often considered during normalization are listed below:
  
- - **sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
+ - **Sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
  
     <img src="../img/sequencing_depth.png" width="400">
  
- - **gene length:** The number of reads mapped to a longer gene can appear to have equal count/expression as a shorter gene that is more highly expressed. Accounting for gene length is necessary for comparing expression between different genes within the same sample.
+ - **Gene length:** The number of reads mapped to a longer gene can appear to have equal count/expression as a shorter gene that is more highly expressed. Accounting for gene length is necessary for comparing expression between different genes within the same sample.
  
     <img src="../img/length_of_gene.png" width="400">
  
