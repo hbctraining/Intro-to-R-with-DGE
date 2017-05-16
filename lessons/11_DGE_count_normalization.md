@@ -210,7 +210,7 @@ As we go through the workflow we will use the relevant functions to check what i
 
 ### 3. Generate the Mov10 normalized counts
 
-The next step is to normalize the count data in order to be able to make fair gene comparisons both within and between samples.
+The next step is to normalize the count data in order to be able to make fair gene comparisons between samples.
 
 
 <img src="../img/slide5_DGE.png" width="400">
