@@ -18,7 +18,7 @@ The first step in the DE analysis workflow is count normalization, which is nece
 
 <img src="../img/deseq_workflow_normalization.png" width="200">
 
-The raw count data is affected by various factors that need to be accounted for and "normalized". A few of these factors are listed below:
+The counts of mapped reads for each gene is proportional to the expression of RNA ("interesting") in addition to many other factors ("uninteresting"). The main factors often normalized for are listed below:
  
  - **normalization for sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
  
@@ -28,7 +28,7 @@ The raw count data is affected by various factors that need to be accounted for 
  
     <img src="../img/length_of_gene.png" width="400">
  
- - **normalization for RNA composition:** recommended for comparison of expression between samples (particularly important when performing differential expression analyses)
+ - **normalization accounting for RNA composition:** recommended for comparison of expression between samples (particularly important when performing differential expression analyses)
  
 	 > "A few highly and differentially expressed genes may have strong influence on the total read count, causing the ratio of total read counts not to be a good estimate for the ratio of expected counts (for all genes)"[[1](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106)]
     
