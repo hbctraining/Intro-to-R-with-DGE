@@ -39,7 +39,19 @@ In this section we will focus on the R package to mine genomic information from 
 
 This is a very convenient way to access and mine the database, since you can easily add any steps with biomart to your DGE workflow within R. 
 
-Let's explore bioMart functionality by performing the task of **converting Ensembl IDs to gene names**, which is something you will find yourself doing relatively frequently as you start working on large genomic datasets. The Ensembl IDs are essentially the row names in the counts file.
+Let's explore bioMart functionality in R using the row names or the Ensembl IDs from the counts data frame. Out goal here is to **convert the Ensembl IDs to gene names**, which is something you will find yourself doing relatively frequently as you start working on large genomic datasets. 
+
+Click on the link to the [counts file](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionIV/results/counts.txt) and save it to your `data` folder.
+
+Read in the counts file:
+
+```r
+# Read in counts file
+
+full_counts <- read.table("data/counts.txt")
+
+counts <- head(full_counts, n=50)
+```
 
 Load the biomaRt library:
 
