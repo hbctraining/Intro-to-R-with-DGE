@@ -18,17 +18,17 @@ The first step in the DE analysis workflow is count normalization, which is nece
 
 <img src="../img/deseq_workflow_normalization.png" width="200">
 
-The counts of mapped reads for each gene is proportional to the expression of RNA ("interesting") in addition to many other factors ("uninteresting"). The main factors often normalized for are listed below:
+The counts of mapped reads for each gene is proportional to the expression of RNA ("interesting") in addition to many other factors ("uninteresting"). The main factors often considered during normalization are listed below:
  
- - **normalization for sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
+ - **sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
  
     <img src="../img/sequencing_depth.png" width="400">
  
- - **normalization for gene length:** necessary for comparison of expression of different genes of varying lengths within the same sample
+ - **gene length:** The number of reads mapped to a longer gene can appear to have equal count/expression as a shorter gene that is more highly expressed. Accounting for gene length is necessary for comparing expression between different genes within the same sample.
  
     <img src="../img/length_of_gene.png" width="400">
  
- - **normalization accounting for RNA composition:** recommended for comparison of expression between samples (particularly important when performing differential expression analyses)
+ - **RNA composition:** A few highly differentially expressed genes can skew some types of normalization methods. Accounting for RNA composition is recommended for comparison of expression between samples, and is particularly important when performing differential expression analyses
  
 	 > "A few highly and differentially expressed genes may have strong influence on the total read count, causing the ratio of total read counts not to be a good estimate for the ratio of expected counts (for all genes)"[[1](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106)]
     
