@@ -25,7 +25,7 @@ The Web interface can be accessed from the Ensembl home page.
 
 ![ensembl_biomart](../img/ensembl_biomart.png). 
 
-Briefly BioMart tool for data mining the Ensembl database requires three steps:
+Briefly, BioMart requires three pieces of information that can be selected from drop-down menus and using check boxes on the web interface:
 
 1. **Choose a database to mine.** Options are Ensembl Gene, Ensembl Variation, Ensembl Regulation, and [Vega](https://en.wikipedia.org/wiki/Vertebrate_and_Genome_Annotation_Project) databases. You will be able to choose your species of interest within these databases.
 2. **Select the type and content of input/query.** Your query can be genomic region(s), specific gene(s), known variant(s), etc.
@@ -33,7 +33,7 @@ Briefly BioMart tool for data mining the Ensembl database requires three steps:
 
 If you are interested in exploring how to use the web interface, Ensembl has a [video tutorial](http://www.ensembl.org/Multi/Help/Movie?db=core;id=189) that goes over the various aspects. 
 
-In this section we will focus on the R package to mine genomic information from Ensembl. Please note that the functions within the R package require the 3 pieces of information listed above, as well.
+In this section we will focus on the R package to mine genomic information from Ensembl. Please note that the functions within the R package also require the 3 pieces of information listed above.
 
 ### biomaRt R package
 
