@@ -24,7 +24,7 @@ The counts of mapped reads for each gene is proportional to the expression of RN
  
     <img src="../img/sequencing_depth.png" width="400">
  
- - **Gene length:** The number of reads mapped to a longer gene can appear to have equal count/expression as a shorter gene that is more highly expressed. Accounting for gene length is necessary for comparing expression between different genes within the same sample.
+ - **Gene length:** Accounting for gene length is necessary for comparing expression between different genes within the same sample. The number of reads mapped to a longer gene can appear to have equal count/expression as a shorter gene that is more highly expressed. 
  
     <img src="../img/length_of_gene.png" width="400">
  
