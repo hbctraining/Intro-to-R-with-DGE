@@ -20,17 +20,17 @@ The first step in the DE analysis workflow is count normalization, which is nece
 
 The raw count data is affected by various factors that need to be accounted for and "normalized". A few of these factors are listed below:
  
- - **normalization for library size:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher number of reads associated with it.
+ - **normalization for sequencing depth:** necessary for comparison of expression of the same gene between samples. In the example below, sample 2 has a higher total number of reads associated with it.
  
     <img src="../img/sequencing_depth.png" width="400">
  
- - **normalization for gene length:** necessary for comparison of expression of different genes of varying lengths within the same sample.
+ - **normalization for gene length:** necessary for comparison of expression of different genes of varying lengths within the same sample
  
     <img src="../img/length_of_gene.png" width="400">
  
  - **normalization for RNA composition:** recommended for comparison of expression between samples (particularly important when performing differential expression analyses)
  
- > "A few highly and differentially expressed genes may have strong influence on the total read count, causing the ratio of total read counts not to be a good estimate for the ratio of expected counts (for all genes)"[[1](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106)]
+	 > "A few highly and differentially expressed genes may have strong influence on the total read count, causing the ratio of total read counts not to be a good estimate for the ratio of expected counts (for all genes)"[[1](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2010-11-10-r106)]
     
 While normalization is essential for differential expression analyses, it is also necessary whenever you are exploring or comparing counts between or within samples, e.g. if you plot the counts for a figure.]
  
