@@ -215,7 +215,7 @@ The next step is to normalize the count data in order to be able to make fair ge
 
 <img src="../img/slide5_DGE.png" width="400">
 
-To perform the median of ratios method of normalization, DESeq2 has a single `estimateSizeFactors()` function that will generate size factors for us:
+To perform the **median of ratios method** of normalization, DESeq2 has a single `estimateSizeFactors()` function that will generate size factors for us:
 
 ```r
 dds <- estimateSizeFactors(dds)
