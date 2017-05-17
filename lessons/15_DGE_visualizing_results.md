@@ -58,40 +58,28 @@ padj.cutoff <- 0.05
 lfc.cutoff <- 0.58
 ```
 
-The `lfc.cutoff` is set to 0.58; remember that we are working with log2 fold changes so this translates to an actual fold change of 1.5 which is pretty reasonable. Let's create vector that helps us identify the genes that meet our criteria:
+The `lfc.cutoff` is set to 0.58; remember that we are working with log2 fold changes so this translates to an actual fold change of 1.5 which is pretty reasonable. Let's extract those genes that meet our criteria:
 
 ```r
-threshold <- res_tableOE$padj < padj.cutoff & abs(res_tableOE$log2FoldChange) > lfc.cutoff
+sig_res_OE <- subset(res_tableOE, padj < padj.cutoff & abs(log2FoldChange) > lfc.cutoff)
 ```
 
-We now have a logical vector of values that has a length which is equal to the total number of genes in the dataset. The elements that have a `TRUE` value correspond to genes that meet the criteria (and `FALSE` means it fails). **How many genes are differentially expressed in the Overexpression compared to Control, given our criteria specified above?** Does this reduce our results? 
+**How many genes are differentially expressed in the Overexpression compared to Control, given our criteria specified above?** Does this reduce our results? 
 
 ```r
-length(which(threshold))
+dim(sig_res_OE)
 ```
 	
-To add this vector to our results table we can use the `$` notation to create the column on the left hand side of the assignment operator, and the assign the vector to it instead of using `cbind()`:
+Using the same thresholds as above (`padj.cutoff < 0.05` and `lfc.cutoff = 0.58`), report the number of genes that are up- and down-regulated in Mov10_knockdown compared to control.
 
 ```r
-res_tableOE$threshold <- threshold                
+sig_res_KD <- subset(res_tableKD, padj < padj.cutoff & abs(log2FoldChange) > lfc.cutoff)
 ```
 
-Now we can easily subset the results table to only include those that are significant using the `subset()` function:
+**How many genes are differentially expressed in the Knockdown compared to Control?**
 
 ```r
-subset(res_tableOE, threshold == TRUE)
-```
-
-Using the same thresholds as above (`padj.cutoff < 0.05` and `lfc.cutoff = 0.58`), create a threshold vector to report the number of genes that are up- and down-regulated in Mov10_knockdown compared to control.
-
-```r
-threshold_KD <- res_tableOKD$padj < padj.cutoff & abs(res_tableKD$log2FoldChange) > lfc.cutoff
-```
-
-Take this new threshold vector and add it as a new column called `threshold` to the `res_tableKD` which contains a logical vector denoting genes as being differentially expressed or not. **How many genes are differentially expressed in the Knockdown compared to Control?**
-
-```r
-res_tableKD$threshold <- threshold_KD
+dim(sig_res_KD)
 ``` 
 
 ## Visualizing the results
@@ -139,20 +127,12 @@ ggplot(df) +
 
 Alternatively, we could extract only the genes that are identified as significant and the plot the expression of those genes using a heatmap.
 
-
-To do this, let's start by sorting the results file by adjusted p-value:
-	
-```r
-### Sort the results tables
-res_tableOE_sorted <- res_tableOE[order(res_tableOE$padj), ]
-res_tableKD_sorted <- res_tableKD[order(res_tableKD$padj), ]
-```	
-Now, let's get the gene names for those significant genes:
+Let's get the gene names for those significant genes:
 
 ```r
 ### Get significant genes
-sigOE <- row.names(res_tableOE_sorted)[which(res_tableOE_sorted$threshold)]
-sigKD <- row.names(res_tableKD_sorted)[which(res_tableKD_sorted$threshold)]
+sigOE <- row.names(sig_res_OE)
+sigKD <- row.names(sig_res_KD)
 ```
 	
 We can then use those genes to select the corresponding rows from the normalized data matrix:
