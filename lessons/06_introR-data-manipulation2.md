@@ -223,6 +223,15 @@ write(glengths, file="genome_lengths.txt", ncolumns=1)
 > additional feature is the ability to work with data stored directly in an
 > external database. The benefits of doing this are that the data can be managed
 > natively in a relational database, queries can be conducted on that database, and only the results of the query returned.
+>
+> `dplyr` is part of the [tidyverse suite of packages](http://tidyverse.org), which were designed to work together to quickly and easily perform the most common operations needed for data science.
+
+
+
+
+
+
+
 
 
 ---
