@@ -16,12 +16,12 @@ Regardless of the specific analysis in R we are performing, we usually need to b
 
 | Data type               | Extension | Function          | Package            |
 |:------------------------|:----------|:------------------|:-------------------|
-| Comma separated values  | csv       | `read.csv()`;     | utils (default);   |
-|                         |           | `read_csv()`;     | readr (tidyverse)  |
+| Comma separated values  | csv       | `read.csv()`      | utils (default)    |
+|                         |           | `read_csv()`      | readr (tidyverse)  |
 | Tab separated values    | tsv       | `read_tsv()`      | readr              |
-| Other delimited formats | txt       | `read.table()`;   | utils;             |
-|                         |           | `read_table()`;   | readr              |
-|                         |           | `read_delim()`    |                    |
+| Other delimited formats | txt       | `read.table()`    | utils              |
+|                         |           | `read_table()`    | readr              |
+|                         |           | `read_delim()`    | readr              |
 | Stata version 13-14     | dta       | `readdta()`       | haven              |
 | Stata version 7-12      | dta       | `read.dta()`      | foreign            |
 | SPSS                    | sav       | `read.spss()`     | foreign            |
