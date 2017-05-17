@@ -32,11 +32,11 @@ Let's take a look at the results table:
 	
 You will find that similar columns are reported for the LRT test. One thing to note is, even though there are fold changes present they are not directly associated with the actual hypothesis test. Thus, when filtering significant genes from the LRT we use only the FDR as our threshold. *How many genes are significant at `padj < 0.05`?*
 
-	sig_LRT <- subset(res_LRT, padj < padj.cutoff & abs(log2FoldChange) > lfc.cutoff)
+	sig_res_LRT <- subset(res_LRT, padj < padj.cutoff & abs(log2FoldChange) > lfc.cutoff)
 	dim(sig_res_KD)
 
 	# Get sig gene lists
-	LRTgenes <- row.names(sig_LRT)
+	LRTgenes <- row.names(sig_res_LRT)
 	length(LRTgenes)
 	length(sigOE)
 	length(sigKD)
