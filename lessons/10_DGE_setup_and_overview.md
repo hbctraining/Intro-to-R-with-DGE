@@ -17,7 +17,7 @@ Approximate time: 60 minutes
 
 The goal of RNA-seq is often to perform differential expression testing to determine which genes are expressed at different levels between conditions. These genes can offer biological insight into the processes affected by the condition(s) of interest. 
 
-To determine the expression levels of genes, an RNA-seq workflow is followed with the steps detailed in the image below. All steps are performed on the command line (Linux/Unix) through the generation of the read counts per gene. The differential expression analysis and any downstream functional analysis are generally performed in R using R packages specifically designed for the complex statistical analyses required to determine whether genes are differentially expressed.
+To determine the expression levels of genes, an RNA-seq workflow is followed with the steps detailed in the image below. All steps up to the generation of the read counts are performed on a cluster using Linux/UNIX. The differential expression analysis and any downstream functional analysis are generally performed in R using R packages specifically designed for the complex statistical analyses required to determine whether genes are differentially expressed.
 
 <img src="../img/rnaseq_full_workflow.png" width="400">
 
