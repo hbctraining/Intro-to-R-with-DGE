@@ -59,7 +59,7 @@ The authors are investigating interactions between various genes involved in Fra
 
 In addition to the raw sequence data that is available in SRA we also need to collect **information about the data**, also known as **metadata**.
 
-Data sharing is important in the biological sciences to promote scientific integrity, and disseminate scientific discovery; but it can be difficult if all of the required information is not provided. From the SRA we can retrieve the sequence data (FASTQ files), but how useful is it if we know nothing about the samples that this sequence data originated from? **Metadata is a broadly used term which encompasses any kind of information that relates to our data, whether it is about the experimental design (i.e genotype) or metrics related to the sequence data (i.e sequencing depth).**
+Data sharing is important in the biological sciences to promote scientific integrity, and disseminate scientific discovery; but it can be difficult if all of the required information is not provided. From the SRA/[GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE51443) we can retrieve the sequence data (FASTQ files), but how useful is it if we know nothing about the samples that this sequence data originated from? **Metadata is a broadly used term which encompasses any kind of information that relates to our data, whether it is about the experimental design (i.e genotype) or metrics related to the sequence data (i.e sequencing depth).**
 
 Below is some of the metadata associated with the dataset we are using today.
 
