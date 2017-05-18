@@ -8,18 +8,16 @@ Approximate time: 60 minutes
 
 ## Learning Objectives 
 
-* Have a general idea of the experiment and its objectives
-* Understand how and why we choose this dataset
-* Getting setup in R (project setup, loading data, loading libraries)
-* Gain a general understanding of the differential gene expression analysis workflow and why the negative binomial distribution is used to model RNA-seq count data
-
+* Explain the experiment and its objectives
+* Describe how to set up an RNA-seq project in R 
+* Describe the RNA-seq and the differential gene expression analysis workflow
+* Explain why negative binomial distribution is used to model RNA-seq count data
 
 # Differential gene expression (DGE) analysis overview 
 
 The goal of RNA-seq is often to perform differential expression testing to determine which genes are expressed at different levels between conditions. These genes can offer biological insight into the processes affected by the condition(s) of interest. 
 
 To determine the expression levels of genes, an RNA-seq workflow is followed with the steps detailed in the image below. All steps are performed on the command line (Linux/Unix) through the generation of the read counts per gene. The differential expression analysis and any downstream functional analysis are generally performed in R using R packages specifically designed for the complex statistical analyses required to determine whether genes are differentially expressed.
-
 
 <img src="../img/rnaseq_full_workflow.png" width="400">
 
@@ -40,8 +38,6 @@ We are only using the [RNA-seq](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?ac
 Using these data, we will evaluate transcriptional patterns associated with perturbation of MOV10 expression. Please note that the irrelevant siRNA will be treated as our control condition.
 
 <img src="../img/dataset.png" width="400">
-
-
 
 ***What is the purpose of these datasets? What does Mov10 do?***
 
