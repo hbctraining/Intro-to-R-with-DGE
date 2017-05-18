@@ -4,6 +4,9 @@ author: "Meeta Mistry, Radhika Khetani, Mary Piper"
 date: "May 12, 2017"
 ---
 
+[GEO]: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE51443 "Gene Expression Omnibus"
+[SRA]: https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP031507 "Sequence Read Archive"
+
 Approximate time: 60 minutes
 
 ## Learning Objectives 
@@ -33,7 +36,7 @@ In the next few lessons, we will walk you through an **end-to-end gene-level RNA
 
 To better interpret the results of our differential expression analysis, it is helpful to know about the dataset we will be using for this part of the workshop. We will be using a real RNA-seq dataset that is part of a larger study described in [Kenny PJ et al, Cell Rep 2014](http://www.ncbi.nlm.nih.gov/pubmed/25464849). 
 
-We are only using the [RNA-seq](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50499) dataset which is publicly available in the [SRA](http://www.ncbi.nlm.nih.gov/sra). The RNA-seq was performed on HEK293F cells that were either transfected with a MOV10 transgene, or siRNA to knock down Mov10 expression, or non-specific (irrelevant) siRNA. This resulted in 3 conditions **Mov10 oe** (over expression), **Mov10 kd** (knock down) and **Irrelevant kd**, respectively. The number of replicates is as shown below. 
+We are only using the RNA-seq dataset which is publicly available at [GEO][]/[SRA][]. The RNA-seq was performed on HEK293F cells that were either transfected with a MOV10 transgene, or siRNA to knock down Mov10 expression, or non-specific (irrelevant) siRNA. This resulted in 3 conditions **Mov10 oe** (over expression), **Mov10 kd** (knock down) and **Irrelevant kd**, respectively. The number of replicates is as shown below. 
 
 Using these data, we will evaluate transcriptional patterns associated with perturbation of MOV10 expression. Please note that the irrelevant siRNA will be treated as our control condition.
 
@@ -59,7 +62,7 @@ The authors are investigating interactions between various genes involved in Fra
 
 In addition to the raw sequence data that is available in SRA we also need to collect **information about the data**, also known as **metadata**.
 
-Data sharing is important in the biological sciences to promote scientific integrity, and disseminate scientific discovery; but it can be difficult if all of the required information is not provided. From the SRA/[GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE51443) we can retrieve the sequence data (FASTQ files), but how useful is it if we know nothing about the samples that this sequence data originated from? **Metadata is a broadly used term which encompasses any kind of information that relates to our data, whether it is about the experimental design (i.e genotype) or metrics related to the sequence data (i.e sequencing depth).**
+Data sharing is important in the biological sciences to promote scientific integrity, and disseminate scientific discovery; but it can be difficult if all of the required information is not provided. From [GEO][]/[SRA][] we can retrieve the sequence data (FASTQ files), but how useful is it if we know nothing about the samples that this sequence data originated from? **Metadata is a broadly used term which encompasses any kind of information that relates to our data, whether it is about the experimental design (i.e genotype) or metrics related to the sequence data (i.e sequencing depth).**
 
 Below is some of the metadata associated with the dataset we are using today.
 
