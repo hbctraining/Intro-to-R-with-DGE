@@ -2,7 +2,7 @@
 layout: topic
 title: BioMart (Ensembl/R)
 author: Mary Piper, Radhika Khetani
-date: "Tuesday, November 14th, 2017"
+date: "Tuesday, May 16th, 2017"
 ---
 
 Approximate time: 45 minutes
