@@ -198,7 +198,7 @@ all_genes <- as.character(all_genes$ensembl_gene_id)
 ego <- enrichGO(gene=sig_genes, universe=all_genes, keytype ="ENSEMBL", OrgDb=org.Hs.eg.db, ont="BP", pAdjustMethod = "BH", qvalueCutoff =0.05, readable=TRUE)
 
 # Output results from GO analysis to a table
-cluster_summary <- summary(ego)
+cluster_summary <- as.data.frame(ego)
 ```
 ![cluster_summary](../img/cluster_summary.png)
 
