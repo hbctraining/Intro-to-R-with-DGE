@@ -48,9 +48,9 @@ Read in the counts file:
 ```r
 # Read in counts file
 
-full_counts <- read.table("data/counts.txt")
+example_counts <- read.table("data/counts.txt")
 
-mm_counts <- head(full_counts, n=50)
+mm_counts <- head(example_counts, n=50)
 ```
 
 Load the biomaRt library:
