@@ -124,8 +124,17 @@ contrast_oe <- list( "sampletypeMOV10_overexpression", "sampletypecontrol")
 res_tableOE <- results(dds, contrast=contrast_oe)
 ```
 
->**NOTE:** We could have specified the contrast in the `results()` argument. The syntax is `results(dds, contrast = c("sample_group", "level_to_compare", "base_level")`. Using our data, you could specify the contrast as follows:
-`results(dds, contrast = c("sampletype", "MOV10_overexpression", "control")`
+>**NOTE:** We could have specified the contrast in the `results()` argument. The syntax is:
+>
+>```r
+>results(dds, contrast = c("sample_group", "level_to_compare", "base_level")
+>````
+>
+>Using our data, you could specify the contrast as follows:
+>
+>```r
+>results(dds, contrast = c("sampletype", "MOV10_overexpression", "control")`
+>```
 
 This will build a results table containing Wald test statistics for the comparison we are interested in. Let's take a look at what information is stored in the results:
 
