@@ -208,15 +208,6 @@ res_tableKD <- results(dds, contrast=contrast_kd)
 
 Take a quick peek at the results table containing Wald test statistics for the Control-Knockdown comparison we are interested in and make sure that format is similar to what we observed with the OE.
 
-***
-
-**Exercise**
-
-Create a contrasts vector for the Mov10_overexpression comparison to *all other samples*.
-
-***
-
-
 > **NOTE: on p-values set to NA**
 > > 
 > 1. If within a row, all samples have zero counts, the baseMean column will be zero, and the log2 fold change estimates, p-value and adjusted p-value will all be set to NA.
