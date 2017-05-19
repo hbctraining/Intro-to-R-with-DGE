@@ -70,7 +70,7 @@ To indicate to DESeq2 the two groups we want to compare, we can use **contrasts*
 	
 	# DO NOT RUN!
 	
-	contast_sex <- list("sexF", "sexM")
+	contrast_sex <- list("sexF", "sexM")
 	
 	results(dds, contrast=contrast_sex)
 	
