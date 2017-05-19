@@ -139,20 +139,12 @@ ggplot(df) +
 
 Alternatively, we could extract only the genes that are identified as significant and the plot the expression of those genes using a heatmap.
 
-
-To do this, let's start by sorting the results file by adjusted p-value:
-	
-```r
-### Sort the results tables
-res_tableOE_sorted <- res_tableOE[order(res_tableOE$padj), ]
-res_tableKD_sorted <- res_tableKD[order(res_tableKD$padj), ]
-```	
-Now, let's get the gene names for those significant genes:
+Let's get the gene names for those significant genes:
 
 ```r
 ### Get significant genes
-sigOE <- row.names(res_tableOE_sorted)[which(res_tableOE_sorted$threshold)]
-sigKD <- row.names(res_tableKD_sorted)[which(res_tableKD_sorted$threshold)]
+sigOE <- row.names(res_tableOE)[which(res_tableOE$threshold)]
+sigKD <- row.names(res_tableKD)[which(res_tableKD$threshold)]
 ```
 	
 We can then use those genes to select the corresponding rows from the normalized data matrix:
