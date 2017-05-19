@@ -39,7 +39,7 @@ In this section we will focus on the R package to mine genomic information from 
 
 This is a very convenient way to access and mine the database, since you can easily add any steps with biomart to your DGE workflow within R. 
 
-Let's explore bioMart functionality in R using the row names or the Ensembl IDs from the counts data frame. Out goal here is to **obtain the gene names for a list of Ensembl mouse IDs**, which is something you will find yourself doing relatively frequently as you start working on large genomic datasets. 
+Let's explore bioMart functionality in R using the row names or the Ensembl IDs from the mm_counts data frame. Out goal here is to **obtain the gene names for a list of Ensembl mouse IDs**, which is something you will find yourself doing relatively frequently as you start working on large genomic datasets. 
 
 Click on the link to the [counts file](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionIV/results/counts.txt) and save it to your `data` folder.
 
@@ -50,7 +50,7 @@ Read in the counts file:
 
 full_counts <- read.table("data/counts.txt")
 
-counts <- head(full_counts, n=50)
+mm_counts <- head(full_counts, n=50)
 ```
 
 Load the biomaRt library:
@@ -98,7 +98,7 @@ We can build a query of our dataset using the `getBM()` function and specifying 
 
 First we can specify our input using the `filters`argument. 
 
-**What is our input?** We want to return gene names for a list of Ensembl mouse IDs from within our `counts` dataframe; therefore our input will be Ensembl IDs and their values will be the row names of our counts dataframe.
+**What is our input?** We want to return gene names for a list of Ensembl mouse IDs from within our `mm_counts` dataframe; therefore our input will be Ensembl IDs and their values will be the row names of our mm_counts dataframe.
 
 ```r
 # To build a query - getBM(filters, values, ...)
@@ -112,10 +112,10 @@ View(filters)
 getBM(filters= "ensembl_gene_id", ...)  # The "..." represents that the getBM() function is not complete
 
                     
-## "Values" is a vector of values for the filter; in our case, our Ensembl IDs are the row names of the counts dataset
+## "Values" is a vector of values for the filter; in our case, our Ensembl IDs are the row names of the mm_counts dataset
 
 getBM(filters= "ensembl_gene_id", 
-		values= row.names(counts), ...)
+		values= row.names(mm_counts), ...)
 ```
 
 #### **Step 3: Choose the attributes to output**
@@ -134,7 +134,7 @@ View(attributes)
 ## Use BioMart to return gene names for a list of Ensembl IDs:
 
 gene_names <- getBM(filters= "ensembl_gene_id",
-                    values= row.names(counts), 
+                    values= row.names(mm_counts), 
                     attributes= c("ensembl_gene_id", "external_gene_name"), ...)
 ```
 
@@ -144,7 +144,7 @@ Finally, to complete the `getBM()` function, we need to specify which dataset to
 # To build a query - getBM(filters, values, attributes, mart)
 
 gene_names <- getBM(filters= "ensembl_gene_id",
-                    values= row.names(counts), 
+                    values= row.names(mm_counts), 
                     attributes= c("ensembl_gene_id", "external_gene_name"), 
                     mart= mouse)
 
@@ -154,14 +154,14 @@ View(gene_names)
                     
 ```
 
-Now that we have our gene names, we need to match them to the Ensembl IDs in our counts dataset. If the columns from two dataframes have the same name, we can merge the dataframes using those columns:
+Now that we have our gene names, we need to match them to the Ensembl IDs in our mm_counts dataset. If the columns from two dataframes have the same name, we can merge the dataframes using those columns:
 
 ```r
 # Merge the two dataframes by ensembl_gene_id
 
-ensembl_results <- merge(counts, gene_names, by.x="row.names", by.y = "ensembl_gene_id")
+ensembl_results <- merge(mm_counts, gene_names, by.x="row.names", by.y = "ensembl_gene_id")
 
-write.csv(ensembl_results, "results/annotated_counts.csv", quote=F)
+write.csv(ensembl_results, "results/annotated_mm_counts.csv", quote=F)
 ```
 #### What if you are using an older genome? 
 
@@ -183,7 +183,7 @@ The filters and attributes change for different builds of the genome, so you mig
 # DO NOT RUN			   
 gene.names_mm9 <- getBM(filters= "ensembl_gene_id", 
                     attributes= c("ensembl_gene_id", "external_gene_name"),
-                    values= row.names(counts),
+                    values= row.names(mm_counts),
                     mart= mouse_mm9)
 ```
 
@@ -196,7 +196,7 @@ View(attributes_mm9)
 
 gene.names_mm9 <- getBM(filters= "ensembl_gene_id", 
                     attributes= c("ensembl_gene_id", "external_gene_id"),
-                    values= row.names(counts),
+                    values= row.names(mm_counts),
                     mart= mouse_mm9)
 
 # human archive for GRCH37 genome build: host = "grch37.ensembl.org"
