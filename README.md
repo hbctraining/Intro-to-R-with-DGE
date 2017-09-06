@@ -34,16 +34,19 @@ These materials will address the following:
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
 ### Contents:
+
 #### Introduction to R
-* [Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md)
-* [Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md)
-* [Functions and arguments](lessons/03_introR-functions-and-arguments.md)
-* [Introduction to packages and libraries](lessons/04_introR-packages-and-libraries.md)
-* [Subsetting (vectors and factors)](lessons/05_introR-data-manipulation.md)
-* [Subsetting (data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md)
-* [Nested functions](lessons/07_introR-nested-functions.md)
-* [Matching](lessons/08_advR-matching.md)
-* [Data visualization with ggplot2](lessons/09_Rdata_visualization.md)
+| Lesson            | Duration |
+|:------------------------|:----------|
+|[Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md) |  |
+|[Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md) |  |
+|[Functions and arguments](lessons/03_introR-functions-and-arguments.md) |  |
+|[Introduction to packages and libraries](lessons/04_introR-packages-and-libraries.md) |  |
+|[Subsetting (vectors and factors)](lessons/05_introR-data-manipulation.md) | |
+|[Subsetting (data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md) |  |
+|[Nested functions](lessons/07_introR-nested-functions.md) |  |
+|[Matching](lessons/08_advR-matching.md) |  |
+|[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | |
 
 #### Differential Gene Expression (DGE) using RNA-seq data
 > From a count matrix to functional analysis on DGE genes)
