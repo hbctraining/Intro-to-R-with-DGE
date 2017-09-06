@@ -1,4 +1,4 @@
-# Introduction to R with differential gene expression (DGE)
+# Introduction to R with differential gene expression (DGE) analysis
 
 ## Description
 This repository has teaching materials for a **3-day**, hands-on **Introduction to R and differential gene expression (DGE) analysis** workshop. The workshop will introduce participants to the basics of R and RStudio and their application to differential gene expression analysis on RNA-seq count data.
