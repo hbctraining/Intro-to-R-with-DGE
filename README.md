@@ -49,17 +49,18 @@ These materials will address the following:
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | |
 
 #### Differential Gene Expression (DGE) using RNA-seq data
-> From a count matrix to functional analysis on DGE genes)
-
-* [Setting up and DGE overview](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/10_DGE_setup_and_overview.md)
-* [Introduction to count normalization](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/11_DGE_count_normalization.md)
-* [QC](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/12_DGE_QC_analysis.md)
-* [Getting started with DESeq2](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/13_DGE_DESeq2_analysis.md)
-* [DEseq2 (contd.)](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/14_DGE_DESeq2_analysis2.md)
-* [Visualization of DGE analysis results](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/15_DGE_visualizing_results.md)
-* [DESeq2 and LRT](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/16_DGE_LRT.md)
-* [BiomaRt and Ensembl](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/17_Ensembl_biomart.md)
-* [Functional Analysis](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/18_functional_analysis.md)
+> From a count matrix to functional analysis on DGE genes
+| Lessons            | Duration |
+|:------------------------|:----------|
+|[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | |
+|[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | |
+|[QC](lessons/12_DGE_QC_analysis.md) |  |
+|[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | |
+|[DEseq2 (contd.)](lessons/14_DGE_DESeq2_analysis2.md) |  |
+|[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | |
+|[DESeq2 and LRT](lessons/16_DGE_LRT.md) |  |
+|[BiomaRt and Ensembl](lessons/17_Ensembl_biomart.md) | |
+|[Functional Analysis](lessons/18_functional_analysis.md) | |
 
 ***
 
