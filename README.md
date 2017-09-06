@@ -49,8 +49,6 @@ These materials will address the following:
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | |
 
 #### Differential Gene Expression (DGE) using RNA-seq data
-> From a count matrix to functional analysis on DGE genes
-
 | Lessons            | Duration |
 |:------------------------|:----------|
 |[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | |
