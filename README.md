@@ -1,6 +1,26 @@
-This repository has teaching materials for a 3-day Introduction to R and differential gene expression (DGE) analysis workshop
-
 ## Description
+This repository has teaching materials for a 3-day, hands-on Introduction to R and differential gene expression (DGE) analysis workshop. The workshop will introduce participants to the basics of R and RStudio and their application to differential gene expression analysis on RNA-seq count data.
+
+R is a simple programming environment that enables the effective handling of data, while providing excellent graphical support. RStudio is a tool that provides a user-friendly environment for working with R. Together, R and RStudio allow participants to wrangle data, plot, and use DESeq2 to obtain lists of differentially expressed genes from RNA-seq count data.
+
+This workshop is intended to provide both basic R programming knowledge AND its application. Participants should be interested in:
+
+- using R for increasing their efficiency for data analysis
+- visualizing data using R (ggplot2)
+- using R to perform statistical analysis on RNA-seq count data to obtain differentially expressed gene lists
+
+Workshop segments will address the following:
+
+- R syntax: Understanding the different 'parts of speech' in R; introducing variables and functions, demonstrating how functions work, and modifying arguments for specific use cases.
+- Data structures in R: Getting a handle on the classes of data structures and the types of data used by R.
+- Data inspection and wrangling: Reading in data from files. Using indices and various functions to subset, merge, and create datasets.
+- Visualizing data: Visualizing data using plotting functions in base R as well as from external packages such as ggplot2.
+- Exporting data and graphics: Generating new data tables and plots for use outside of the R environment.
+- Differential expression analysis for RNA-seq data:
+  - QC on count data
+  - Using DESeq2 to obtain a list of significantly different genes
+  - Visualizing expression patterns of differentially expressed genes
+  - Performing functional analysis on gene lists with R-based tools
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
