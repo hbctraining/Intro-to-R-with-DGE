@@ -53,7 +53,7 @@ These materials will address the following:
 |:------------------------|:----------|
 |[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | |
 |[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | |
-|[QC](lessons/12_DGE_QC_analysis.md) |  |
+|[QC using principal component analysis (PCA) and heirarchical clustering](lessons/12_DGE_QC_analysis.md) |  |
 |[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | |
 |[DEseq2 (contd.)](lessons/14_DGE_DESeq2_analysis2.md) |  |
 |[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | |
