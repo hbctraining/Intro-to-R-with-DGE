@@ -18,7 +18,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 - visualizing data using R (ggplot2)
 - using R to perform statistical analysis on RNA-seq count data to obtain differentially expressed gene lists
 
-These materials will address the following:
+### Learning Objectives
 
 - **R syntax:** Understanding the different 'parts of speech' in R; introducing variables and functions, demonstrating how functions work, and modifying arguments for specific use cases.
 - **Data structures in R:** Getting a handle on the classes of data structures and the types of data used by R.
