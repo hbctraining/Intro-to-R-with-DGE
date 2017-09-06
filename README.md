@@ -7,7 +7,7 @@ This repository has teaching materials for a 3-day Introduction to R and differe
 * [Functions and arguments](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/03_introR-functions-and-arguments.md)
 * [Introduction to packages and libraries](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/04_introR-packages-and-libraries.md)
 * [Subsetting (vectors and factors)](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/05_introR-data-manipulation.md)
-* [Subsetting (data frames, matrices and lists](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/06_introR-data-manipulation2.md)
+* [Subsetting (data frames, matrices and lists)](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/06_introR-data-manipulation2.md)
 * [Nested functions](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/07_introR-nested-functions.md)
 * [Matching](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/08_advR-matching.md)
 * [Data visualization with ggplot2](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/09_Rdata_visualization.md)
