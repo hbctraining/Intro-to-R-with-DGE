@@ -1,5 +1,16 @@
 ## Introduction to R with differential gene expression (DGE) analysis
 
+### Audience
+Biologists
+
+Computational skills: Beginner/Intermediate
+
+### Prerequisites
+None
+
+### Duration
+3-day workshop (~19.5 hours of trainer-led time)
+
 ### Description
 This repository has teaching materials for a **3-day**, hands-on **Introduction to R and differential gene expression (DGE) analysis** workshop. The workshop will introduce participants to the basics of R and RStudio and their application to differential gene expression analysis on RNA-seq count data.
 
@@ -25,17 +36,6 @@ These materials will address the following:
   - Performing functional analysis on gene lists with R-based tools
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
-
-### Audience
-Biologists
-
-Computational skills: Beginner/Intermediate
-
-### Prerequisites
-None
-
-### Duration
-3-day workshop (~19.5 hours of trainer-led time)
 
 ### Contents:
 #### Introduction to R
