@@ -38,23 +38,23 @@ These materials will address the following:
 #### Introduction to R
 | Lessons            | Duration |
 |:------------------------|:----------|
-|[Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md) |  |
-|[Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md) |  |
-|[Functions and arguments](lessons/03_introR-functions-and-arguments.md) |  |
-|[Introduction to packages and libraries](lessons/04_introR-packages-and-libraries.md) |  |
-|[Subsetting (vectors and factors)](lessons/05_introR-data-manipulation.md) | |
-|[Subsetting (data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md) |  |
-|[Nested functions](lessons/07_introR-nested-functions.md) |  |
-|[Matching](lessons/08_advR-matching.md) |  |
-|[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | |
+|[Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md) | 40 min |
+|[Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md) | 80 min |
+|[Functions and arguments](lessons/03_introR-functions-and-arguments.md) | 25 min |
+|[Introduction to packages and finding help](lessons/04_introR-packages-and-libraries.md) | 25 min |
+|[Data wrangling: subsetting vectors and factors](lessons/05_introR-data-manipulation.md) | 65 min |
+|[Data wrangling: subsetting data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md) | 75 min |
+|[Nested functions](lessons/07_introR-nested-functions.md) | 30 min |
+|[Matching and reordering](lessons/08_advR-matching.md) | 45 min |
+|[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) |  |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
 | Lessons            | Duration |
 |:------------------------|:----------|
-|[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | |
-|[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | |
-|[QC using principal component analysis (PCA) and heirarchical clustering](lessons/12_DGE_QC_analysis.md) |  |
-|[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | |
+|[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | 70 min |
+|[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | 50 min |
+|[QC using principal component analysis (PCA) and heirarchical clustering](lessons/12_DGE_QC_analysis.md) | 85 min |
+|[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | 30 min |
 |[DEseq2 (contd.)](lessons/14_DGE_DESeq2_analysis2.md) |  |
 |[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | |
 |[DESeq2 and LRT](lessons/16_DGE_LRT.md) |  |
