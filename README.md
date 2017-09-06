@@ -1,5 +1,4 @@
 ---
-layout: topic
 Audience: Biologists
 Computational Skills: Beginner/Intermediate
 Prerequisites: None
