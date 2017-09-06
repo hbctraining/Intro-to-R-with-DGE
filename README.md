@@ -28,6 +28,9 @@ Workshop segments will address the following:
 Biologists
 Computational skills: Beginner/Intermediate
 
+## Prerequisites
+None
+
 ## Duration
 3-day workshop (~19.5 hours of trainer-led time)
 
