@@ -1,23 +1,10 @@
 ---
 layout: topic
-title: Introduction to R and RStudio
-authors: Mary Piper, Meeta Mistry, Radhika Khetani
-date: "Tuesday, May 9, 2017"
+Audience: Biologists
+Computational Skills: Beginner/Intermediate
+Prerequisites: None
+Duration: 3-day workshop (~19.5 hours of trainer-led time)
 ---
-
-Approximate time: 30 minutes
-## Introduction to R with differential gene expression (DGE) analysis
-
-### Audience
-Biologists
-
-Computational skills: Beginner/Intermediate
-
-### Prerequisites
-None
-
-### Duration
-3-day workshop (~19.5 hours of trainer-led time)
 
 ### Description
 This repository has teaching materials for a **3-day**, hands-on **Introduction to R and differential gene expression (DGE) analysis** workshop. The workshop will introduce participants to the basics of R and RStudio and their application to differential gene expression analysis on RNA-seq count data.
