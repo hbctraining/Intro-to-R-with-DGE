@@ -36,7 +36,7 @@ These materials will address the following:
 ### Contents:
 
 #### Introduction to R
-| Lesson            | Duration |
+| Lessons            | Duration |
 |:------------------------|:----------|
 |[Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md) |  |
 |[Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md) |  |
