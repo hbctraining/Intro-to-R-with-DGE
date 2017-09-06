@@ -1,5 +1,5 @@
 ---
-title: "Functional Analysis for RNA-seq"
+title: "Functional Analysis for RNA-Seq"
 author: "Mary Piper"
 date: "Thursday, December 1, 2016"
 ---
@@ -16,7 +16,7 @@ Learning Objectives:
 
 # Functional analysis 
 
-The output of RNA-seq differential expression analysis is a list of significant differentially expressed genes (DEGs). To gain greater biological insight on the DEGs there are various analyses that can be done:
+The output of RNA-Seq differential expression analysis is a list of significant differentially expressed genes (DEGs). To gain greater biological insight on the DEGs there are various analyses that can be done:
 
 - determine whether there is enrichment of known biological functions, interactions, or pathways
 - identify genes' involvement in novel pathways or networks by grouping genes together based on similar trends
@@ -93,8 +93,6 @@ The color codes in the gProfiler output represent the quality of the evidence fo
 
 Also, due to the hierarchical structure of GO terms, you may return many terms that seem redundant since they are child and parent terms. gProfiler allows for 'hierarchical filtering', returning only the best term per parent term.
 
-We encourage you to explore gProfiler online, for today's class we will be demonstrating how to run it using the R package.
-
 #### Running gProfiler
 
 For our gProfiler analysis, we are going to subset our `res_tableOE` only using a padjusted-value threshold of 0.05 (padj = 0.05). 
@@ -134,7 +132,7 @@ write.table(gprofiler_results_oe,
             sep="\t", quote=F, row.names=F)
 ```
 
-Now, extract only those lines in the gProfiler results with GO term accession numbers for downstream analyses:
+Now, extract only the lines in the gProfiler results with GO term accession numbers for downstream analyses:
 
 ```r
 ## Extract GO IDs for downstream analysis
@@ -198,12 +196,12 @@ all_genes <- as.character(all_genes$ensembl_gene_id)
 ego <- enrichGO(gene=sig_genes, universe=all_genes, keytype ="ENSEMBL", OrgDb=org.Hs.eg.db, ont="BP", pAdjustMethod = "BH", qvalueCutoff =0.05, readable=TRUE)
 
 # Output results from GO analysis to a table
-cluster_summary <- as.data.frame(ego)
+cluster_summary <- summary(ego)
 ```
 ![cluster_summary](../img/cluster_summary.png)
 
 ### Visualizing clusterProfiler results
-clusterProfiler has a variety of options for viewing the over-represented GO terms. We will explore the dotplot, enrichment plot, and the category netplot.
+ClusterProfiler has a variety of options for viewing the over-represented GO terms. We will explore the dotplot, enrichment plot, and the category netplot.
 
 The dotplot shows the number of genes associated with the first 25 terms (size) and the p-adjusted values for these terms (color). 
 
@@ -221,23 +219,31 @@ enrichMap(ego, n=25, vertex.label.font=10)
 
 ![enrichplot](../img/enrich.png)
 
-Finally, the category netplot shows the relationships between the genes associated with the top five most significant GO terms and the fold changes of the significant genes associated with these terms (color). This plot is particularly useful for hypothesis generation in identifying genes that may be important to several of the most affected processes. 
+Finally, the category netplot shows the relationships between the genes associated with the top five most significant GO terms and the fold changes of the significant genes associated with these terms (color). The size of the GO terms reflects the pvalues of the terms, with the more significant terms being larger. This plot is particularly useful for hypothesis generation in identifying genes that may be important to several of the most affected processes. 
 
 ```r
-cnetplot(ego, categorySize="pvalue", showCategory = 5, vertex.label.font=6)
+# To color genes by log2 fold changes, we need to extract the log2 fold changes from our results table creating a named vector
+OE_foldchanges <- sigOE$log2FoldChange
+
+names(OE_foldchanges) <- sigOE$Row.names
+
+cnetplot(ego, categorySize="pvalue", showCategory = 5, foldChange=OE_foldchanges, vertex.label.font=6)
 ```
 
-![cnetplot](../img/cnet.png)
+**Again, to save the figure,** click on the `Export` button in the RStudio `Plots` tab and `Save as PDF...`. Change the `PDF size` to `24 x 32` to give a figure of appropriate size for the text labels.
 
-**NOTE:** You can color genes by fold changes by adding an argument called `foldChange` with a vector of foldchanges corresponding to the `sig_genes` vector. Also, if you are interested in significant processes that are **not** among the top five, you can subset your `ego` dataset to only display these processes:
+<img src="../img/mov10oe_cnetplot.png" width="800">
+
+If you are interested in significant processes that are **not** among the top five, you can subset your `ego` dataset to only display these processes:
 
 ```r
 ego2 <- ego
-ego2@result <- ego@result[c(3,16,17,18,25),]
-cnetplot(ego2, categorySize="pvalue", showCategory = 5)
+ego2@result <- ego@result[c(1,3,4,8,9),]
+cnetplot(ego2, categorySize="pvalue", foldChange=OE_foldchanges, showCategory = 5)
 ```
 
-![cnet_example](../img/ego2_example.png)
+<img src="../img/mov10oe_cnetplot2.png" width="800">
+
 
 ## [Other functional analysis methods](https://github.com/hbc/NGS-Data-Analysis-long-course/blob/Fall_2016/sessionIII/lessons/functional_analysis_other_methods.md)
 
