@@ -1,6 +1,6 @@
-# Introduction to R with differential gene expression (DGE) analysis
+## Introduction to R with differential gene expression (DGE) analysis
 
-## Description
+### Description
 This repository has teaching materials for a **3-day**, hands-on **Introduction to R and differential gene expression (DGE) analysis** workshop. The workshop will introduce participants to the basics of R and RStudio and their application to differential gene expression analysis on RNA-seq count data.
 
 R is a simple programming environment that enables the effective handling of data, while providing excellent graphical support. RStudio is a tool that provides a user-friendly environment for working with R. Together, R and RStudio allow participants to wrangle data, plot, and use DESeq2 to obtain lists of differentially expressed genes from RNA-seq count data.
@@ -26,19 +26,19 @@ These materials will address the following:
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
-## Audience
+### Audience
 Biologists
 
 Computational skills: Beginner/Intermediate
 
-## Prerequisites
+### Prerequisites
 None
 
-## Duration
+### Duration
 3-day workshop (~19.5 hours of trainer-led time)
 
-## Contents:
-### Introduction to R
+### Contents:
+#### Introduction to R
 * [Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md)
 * [Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md)
 * [Functions and arguments](lessons/03_introR-functions-and-arguments.md)
@@ -49,7 +49,7 @@ None
 * [Matching](lessons/08_advR-matching.md)
 * [Data visualization with ggplot2](lessons/09_Rdata_visualization.md)
 
-### Differential Gene Expression (DGE) using RNA-seq data
+#### Differential Gene Expression (DGE) using RNA-seq data
 > From a count matrix to functional analysis on DGE genes)
 
 * [Setting up and DGE overview](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/10_DGE_setup_and_overview.md)
