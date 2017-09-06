@@ -1,3 +1,11 @@
+---
+layout: topic
+title: Introduction to R and RStudio
+authors: Mary Piper, Meeta Mistry, Radhika Khetani
+date: "Tuesday, May 9, 2017"
+---
+
+Approximate time: 30 minutes
 ## Introduction to R with differential gene expression (DGE) analysis
 
 ### Audience
