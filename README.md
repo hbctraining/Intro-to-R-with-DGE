@@ -1,3 +1,5 @@
+## Introduction to R and differential gene expression (DGE) analysis
+
 ---
 Audience: Biologists
 Computational Skills: Beginner/Intermediate
