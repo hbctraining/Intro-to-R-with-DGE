@@ -1,16 +1,27 @@
 This repository has teaching materials for a 3-day Introduction to R and differential gene expression (DGE) analysis workshop
 
-## Lesson list:
+## Description
+
+> These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
+
+## Audience
+Biologists
+Computational skills: Beginner/Intermediate
+
+## Duration
+3-day workshop (~19.5 hours of trainer-led time)
+
+## Contents:
 ### Introduction to R
-* [Introduction to R and RStudio](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/01_introR-R-and-RStudio.md)
-* [Syntax and data structures](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/02_introR-syntax-and-data-structures.md)
-* [Functions and arguments](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/03_introR-functions-and-arguments.md)
-* [Introduction to packages and libraries](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/04_introR-packages-and-libraries.md)
-* [Subsetting (vectors and factors)](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/05_introR-data-manipulation.md)
-* [Subsetting (data frames, matrices and lists)](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/06_introR-data-manipulation2.md)
-* [Nested functions](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/07_introR-nested-functions.md)
-* [Matching](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/08_advR-matching.md)
-* [Data visualization with ggplot2](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/09_Rdata_visualization.md)
+* [Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md)
+* [Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md)
+* [Functions and arguments](lessons/03_introR-functions-and-arguments.md)
+* [Introduction to packages and libraries](lessons/04_introR-packages-and-libraries.md)
+* [Subsetting (vectors and factors)](lessons/05_introR-data-manipulation.md)
+* [Subsetting (data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md)
+* [Nested functions](lessons/07_introR-nested-functions.md)
+* [Matching](lessons/08_advR-matching.md)
+* [Data visualization with ggplot2](lessons/09_Rdata_visualization.md)
 
 ### Differential Gene Expression (DGE) using RNA-seq data
 > From a count matrix to functional analysis on DGE genes)
