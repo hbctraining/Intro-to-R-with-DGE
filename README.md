@@ -33,8 +33,6 @@ These materials will address the following:
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
-### Schedule:
-
 #### Introduction to R
 | Lessons            | Duration |
 |:------------------------|:----------|
