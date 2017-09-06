@@ -36,7 +36,7 @@ These materials will address the following:
 ### Contents
 
 #### Introduction to R
-| Lessons            | Duration |
+| Lessons            | Estimated duration |
 |:------------------------|:----------|
 |[Introduction to R and RStudio](lessons/01_introR-R-and-RStudio.md) | 40 min |
 |[Syntax and data structures](lessons/02_introR-syntax-and-data-structures.md) | 80 min |
@@ -45,21 +45,21 @@ These materials will address the following:
 |[Data wrangling: subsetting vectors and factors](lessons/05_introR-data-manipulation.md) | 65 min |
 |[Data wrangling: subsetting data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md) | 75 min |
 |[Nested functions](lessons/07_introR-nested-functions.md) | 30 min |
-|[Matching and reordering](lessons/08_advR-matching.md) | 45 min |
+|[Matching and reordering](lessons/08_advR-matching.md) | 90 min |
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
 | Lessons            | Duration |
 |:------------------------|:----------|
 |[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | 70 min |
-|[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | 50 min |
-|[QC using principal component analysis (PCA) and heirarchical clustering](lessons/12_DGE_QC_analysis.md) | 85 min |
-|[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | 30 min |
-|[DEseq2 (contd.)](lessons/14_DGE_DESeq2_analysis2.md) |  |
-|[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | |
-|[DESeq2 and LRT](lessons/16_DGE_LRT.md) |  |
-|[BiomaRt and Ensembl](lessons/17_Ensembl_biomart.md) | |
-|[Functional Analysis](lessons/18_functional_analysis.md) | |
+|[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | 60 min |
+|[QC using principal component analysis (PCA) and heirarchical clustering](lessons/12_DGE_QC_analysis.md) | 90 min |
+|[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | 70 min |
+|[Pairwise comparisons with DEseq2](lessons/14_DGE_DESeq2_analysis2.md) | 45 min |
+|[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | 45 min |
+|[Complex designs with DESeq2 (LRT)](lessons/16_DGE_LRT.md) | 60 min |
+|[BiomaRt and Ensembl](lessons/17_Ensembl_biomart.md) | 30 min |
+|[Functional Analysis](lessons/18_functional_analysis.md) | 85 min |
 
 ***
 
