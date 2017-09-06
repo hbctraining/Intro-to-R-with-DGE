@@ -57,6 +57,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Getting started with DESeq2](lessons/13_DGE_DESeq2_analysis.md) | 70 min |
 |[Pairwise comparisons with DEseq2](lessons/14_DGE_DESeq2_analysis2.md) | 45 min |
 |[Visualization of DGE analysis results](lessons/15_DGE_visualizing_results.md) | 45 min |
+|[Summary of DGE workflow](https://github.com/hbctraining/Intro-to-R-with-DGE/blob/master/lessons/16_DGE_workflow_summary.md) | 15 min |
 |[Complex designs with DESeq2 (LRT)](lessons/16_DGE_LRT.md) | 60 min |
 |[BiomaRt and Ensembl](lessons/17_Ensembl_biomart.md) | 30 min |
 |[Functional Analysis](lessons/18_functional_analysis.md) | 85 min |
