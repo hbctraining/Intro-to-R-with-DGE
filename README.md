@@ -33,7 +33,7 @@ These materials will address the following:
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
-### Contents:
+### Schedule:
 
 #### Introduction to R
 | Lessons            | Duration |
@@ -48,7 +48,7 @@ These materials will address the following:
 |[Matching](lessons/08_advR-matching.md) |  |
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | |
 
-#### Differential Gene Expression (DGE) using RNA-seq data
+#### Differential Gene Expression (DGE) using RNA-seq raw counts data
 | Lessons            | Duration |
 |:------------------------|:----------|
 |[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | |
