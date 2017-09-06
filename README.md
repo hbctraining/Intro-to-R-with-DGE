@@ -26,6 +26,7 @@ Workshop segments will address the following:
 
 ## Audience
 Biologists
+
 Computational skills: Beginner/Intermediate
 
 ## Prerequisites
