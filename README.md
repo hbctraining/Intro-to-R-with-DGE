@@ -46,7 +46,7 @@ These materials will address the following:
 |[Data wrangling: subsetting data frames, matrices and lists)](lessons/06_introR-data-manipulation2.md) | 75 min |
 |[Nested functions](lessons/07_introR-nested-functions.md) | 30 min |
 |[Matching and reordering](lessons/08_advR-matching.md) | 45 min |
-|[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) |  |
+|[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
 | Lessons            | Duration |
