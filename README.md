@@ -11,12 +11,12 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 Workshop segments will address the following:
 
-- R syntax: Understanding the different 'parts of speech' in R; introducing variables and functions, demonstrating how functions work, and modifying arguments for specific use cases.
-- Data structures in R: Getting a handle on the classes of data structures and the types of data used by R.
-- Data inspection and wrangling: Reading in data from files. Using indices and various functions to subset, merge, and create datasets.
-- Visualizing data: Visualizing data using plotting functions in base R as well as from external packages such as ggplot2.
-- Exporting data and graphics: Generating new data tables and plots for use outside of the R environment.
-- Differential expression analysis for RNA-seq data:
+- **R syntax:** Understanding the different 'parts of speech' in R; introducing variables and functions, demonstrating how functions work, and modifying arguments for specific use cases.
+- **Data structures in R:** Getting a handle on the classes of data structures and the types of data used by R.
+- **Data inspection and wrangling:** Reading in data from files. Using indices and various functions to subset, merge, and create datasets.
+- **Visualizing data:** Visualizing data using plotting functions in base R as well as from external packages such as ggplot2.
+- **Exporting data and graphics:** Generating new data tables and plots for use outside of the R environment.
+- **Differential expression analysis for RNA-seq data:**
   - QC on count data
   - Using DESeq2 to obtain a list of significantly different genes
   - Visualizing expression patterns of differentially expressed genes
