@@ -43,7 +43,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Functions and arguments](lessons/03_introR-functions-and-arguments.md) | 25 min |
 |[Introduction to packages and finding help](lessons/04_introR-packages-and-libraries.md) | 25 min |
 |[Data wrangling: subsetting vectors and factors](lessons/05_introR-data-manipulation.md) | 65 min |
-|[Data wrangling: subsetting data frames, matrices and lists](lessons/06_introR-data-manipulation2.md) | 75 min |
+|[Data wrangling: subsetting data frames, matrices and lists             ](lessons/06_introR-data-manipulation2.md) | 75 min |
 |[Nested functions](lessons/07_introR-nested-functions.md) | 30 min |
 |[Matching and reordering](lessons/08_advR-matching.md) | 90 min |
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | 60 min |
