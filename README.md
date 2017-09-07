@@ -49,7 +49,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Data visualization with ggplot2](lessons/09_Rdata_visualization.md) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
-| Lessons            | Duration |
+| Lessons            | Estimated duration |
 |:------------------------|:----------|
 |[Setting up and DGE overview](lessons/10_DGE_setup_and_overview.md) | 70 min |
 |[Introduction to count normalization](lessons/11_DGE_count_normalization.md) | 60 min |
