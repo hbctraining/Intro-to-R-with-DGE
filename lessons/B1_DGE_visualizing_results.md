@@ -170,7 +170,7 @@ ggplot(resOE_df) +
         axis.title = element_text(size = rel(1.25)))  
 ```
 
-<img src="../img/volcanoplot-1.png" width=500> 
+<img src="../img/volcanoplot-1.png" width="500"> 
 
 This is a great way to get an overall picture of what is going on, but what if we also wanted to know where the top 10 genes (lowest padj) in our DE list are located on this plot? We could label those dots with the gene name on the Volcano plot using `geom_text_repel()`.
 
@@ -200,7 +200,7 @@ ggplot(resOE_df_ordered) +
         axis.title = element_text(size = rel(1.25))) 
 ```
 
-<img src="../img/volcanoplot-2.png" width=500> 
+<img src="../img/volcanoplot-2.png" width="500"> 
 
 The `ifelse()` function is a simple function that outputs a vector if a certain condition is T. In the above example, it checks if the value in the `resOE_df_ordered$genelevel` column is TRUE, in which case it will output the row name for that row (`rownames(resOE_df_ordered)`). If the value in the genelevel column is FALSE it will output nothing (`""`). This is good way to inform `geom_point()` about genes we want labeled.
 
