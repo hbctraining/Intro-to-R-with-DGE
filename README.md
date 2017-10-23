@@ -39,8 +39,8 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 | Lessons            | Estimated duration |
 |:------------------------|:----------|
-|[Introduction to R and RStudio](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/01_introR-R-and-RStudio.md) | 40 min |
-|[Syntax and data structures](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/02_introR-syntax-and-data-structures.md) | 80 min |
+|[Introduction to R and RStudio](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/01_introR-R-and-RStudio.html) | 40 min |
+|[Syntax and data structures](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/02_introR-syntax-and-data-structures.html) | 80 min |
 |[Functions and arguments](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/03_introR-functions-and-arguments.md) | 45 min |
 |[Data wrangling: subsetting vectors and factors](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/04_introR-data-wrangling.md) | 65 min |
 |[Data wrangling: subsetting data frames, matrices and lists](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/05_introR-data-wrangling2.md) | 75 min |
@@ -51,8 +51,8 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 | Lessons            | Estimated duration |
 |:------------------------|:----------|
-|[Setting up and DGE overview](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/01_DGE_setup_and_overview.md) | 70 min |
-|[Introduction to count normalization](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/02_DGE_count_normalization.md) | 60 min |
+|[Setting up and DGE overview](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/01_DGE_setup_and_overview.html) | 70 min |
+|[Introduction to count normalization](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/02_DGE_count_normalization.html) | 60 min |
 |[QC using principal component analysis (PCA) and heirarchical clustering](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/03_DGE_QC_analysis.md) | 90 min |
 |[Getting started with DESeq2](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/04_DGE_DESeq2_analysis.md) | 70 min |
 |[Pairwise comparisons with DEseq2](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/05_DGE_DESeq2_analysis2.md) | 45 min |
