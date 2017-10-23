@@ -36,6 +36,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 ### Contents
 
 #### Introduction to R
+
 | Lessons            | Estimated duration |
 |:------------------------|:----------|
 |[Introduction to R and RStudio](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/01_introR-R-and-RStudio.md) | 40 min |
@@ -47,6 +48,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Data visualization with ggplot2](https://github.com/hbctraining/Intro-to-R/blob/master/lessons/07_ggplot2.md) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
+
 | Lessons            | Estimated duration |
 |:------------------------|:----------|
 |[Setting up and DGE overview](https://github.com/hbctraining/DGE_workshop/blob/master/lessons/01_DGE_setup_and_overview.md) | 70 min |
