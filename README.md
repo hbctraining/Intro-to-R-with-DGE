@@ -41,11 +41,11 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |:------------------------|:----------|
 |[Introduction to R and RStudio](https://hbctraining.github.io/Intro-to-R/lessons/01_introR-R-and-RStudio.html) | 40 min |
 |[Syntax and data structures](https://hbctraining.github.io/Intro-to-R/lessons/02_introR-syntax-and-data-structures.html) | 80 min |
-|[Functions and arguments](https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.md) | 45 min |
-|[Data wrangling: subsetting vectors and factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.md) | 65 min |
-|[Data wrangling: subsetting data frames, matrices and lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.md) | 75 min |
-|[Matching and reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.md) | 90 min |
-|[Data visualization with ggplot2](https://hbctraining.github.io/Intro-to-R/lessons/07_ggplot2.md) | 60 min |
+|[Functions and arguments](https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html) | 45 min |
+|[Data wrangling: subsetting vectors and factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.html) | 65 min |
+|[Data wrangling: subsetting data frames, matrices and lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | 75 min |
+|[Matching and reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | 90 min |
+|[Data visualization with ggplot2](https://hbctraining.github.io/Intro-to-R/lessons/07_ggplot2.html) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
 
@@ -53,13 +53,13 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |:------------------------|:----------|
 |[Setting up and DGE overview](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | 70 min |
 |[Introduction to count normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | 60 min |
-|[QC using principal component analysis (PCA) and heirarchical clustering](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.md) | 90 min |
-|[Getting started with DESeq2](https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.md) | 70 min |
-|[Pairwise comparisons with DEseq2](https://hbctraining.github.io/DGE_workshop/lessons/05_DGE_DESeq2_analysis2.md) | 45 min |
+|[QC using principal component analysis (PCA) and heirarchical clustering](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html) | 90 min |
+|[Getting started with DESeq2](https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html) | 70 min |
+|[Pairwise comparisons with DEseq2](https://hbctraining.github.io/DGE_workshop/lessons/05_DGE_DESeq2_analysis2.html) | 45 min |
 |[Visualization of DGE analysis results](lessons/B1_DGE_visualizing_results.md) | 45 min |
-|[Summary of DGE workflow](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.md) | 15 min |
-|[Complex designs with DESeq2 (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.md) | 30 min |
-|[Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.md) | 85 min |
+|[Summary of DGE workflow](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | 15 min |
+|[Complex designs with DESeq2 (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | 30 min |
+|[Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | 85 min |
 
 ***
 
