@@ -60,6 +60,47 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Summary of DGE workflow](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | 15 min |
 |[Complex designs with DESeq2 (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | 30 min |
 |[Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | 85 min |
+***
+
+### Installation Requirements
+
+Download the most recent versions of R and RStudio for your laptop:
+
+ - [R](http://lib.stat.cmu.edu/R/CRAN/) 
+ - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+ 
+Install the required R packages by running the following code in RStudio:
+
+```r
+source("http://bioconductor.org/biocLite.R") 
+biocLite(c("RColorBrewer", "pheatmap", "gProfileR", "DESeq2", "clusterProfiler", 
+           "DOSE", "org.Hs.eg.db", "pathview", "treemap", "purrr", "SPIA", "DEGreport", "ggrepel"))
+```
+
+Load the libraries to make sure the packages installed properly:
+
+```r
+library(DESeq2)
+library(ggplot2)
+library(RColorBrewer)
+library(pheatmap)
+library(clusterProfiler)
+library(DEGreport)
+library(org.Hs.eg.db)
+library(DOSE)
+library(pathview)
+library(SPIA)
+library(purrr)
+library(gProfileR)
+library(treemap)
+library(ggrepel)
+```
+
+### Practical exercises
+After completion of the workshop, practice of concepts can be explored with [these exercises](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises.html). An answer key is [available](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises%20answer_key.html) to check answers.
+
+****
+
 
 ***
 
