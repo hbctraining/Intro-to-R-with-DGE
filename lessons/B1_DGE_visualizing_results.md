@@ -220,30 +220,13 @@ ggplot(melted_top20_sigOE) +
 
 The above plot would be great to look at the expression levels of good number of genes, but for more of a global view there are other plots we can draw. A commonly used one is a volcano plot; in which you have the log transformed adjusted p-values plotted on the y-axis and log2 fold change values on the x-axis. There is no built-in function for the volcano plot in DESeq2, but we can easily draw it using `ggplot2`. 
 
-To generate a volcano plot, we first need to have a column in our results data indicating whether or not the gene is considered differentially expressed based on p-adjusted and log2 foldchange values.
+To generate a volcano plot, we have a column in our results data indicating whether or not the gene is considered differentially expressed based on p-adjusted and log2 foldchange values.
 
 ```r
-threshold_OE <- res_tableOE$padj < padj.cutoff & abs(res_tableOE$log2FoldChange) > lfc.cutoff
-```
-
-We now have a logical vector of values that has a length which is equal to the total number of genes in the dataset. The elements that have a `TRUE` value correspond to genes that meet the criteria (and `FALSE` means it fails). It should countain the same number of TRUEs as the number of genes in our `sigOE` data frame.
-
-```r
-length(which(threshold_OE))
-```
-	
-To add this vector to our results table we can use the `$` notation to create the column on the left hand side of the assignment operator, and then assign the vector to it instead of using `cbind()`:
-
-```r
-res_tableOE$threshold <- threshold_OE 
-
-# We need to convert the DESeq results object to a data frame to use as ggplot input
-resOE_df <- data.frame(res_tableOE)
-
 View(resOE_df)
 ```
 
-Now we can start plotting. The `geom_point` object is most applicable, as this is essentially a scatter plot:
+Since we have the `threshold` column,  we can start plotting. The `geom_point` object is most applicable, as this is essentially a scatter plot:
 
 ```r
 # Volcano plot
