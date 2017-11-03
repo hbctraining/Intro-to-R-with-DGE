@@ -42,7 +42,7 @@ plotCounts(dds, gene="MOV10", intgroup="sampletype")
 
 **This function only allows for plotting the counts of a single gene at a time.** 
 
-#### Using ggplot2 to plot expression of a single gene
+#### **Using ggplot2 to plot expression of a single gene**
 
 If you wish to change the appearance of this plot, we can save the output of `plotCounts()` to a variable specifying the `returnData=TRUE` argument, then use `ggplot()`:
 
@@ -66,7 +66,7 @@ ggplot(d, aes(x=sampletype, y=count, color=sampletype)) +
 
 <img src="../img/plotCounts_ggrepel.png" width="600">
 
-#### Using `ggplot2` to plot multiple genes (e.g. top 20)
+#### **Using `ggplot2` to plot multiple genes (e.g. top 20)**
 
 Often it is helpful to check the expression of multiple genes of interest at the same time. While this isn't easily done using the `plotCounts()` function, we can use `ggplot()` to do this after performing some data wrangling.
 
