@@ -30,7 +30,7 @@ library(DEGreport)
 
 One way to visualize results would be to simply plot the expression data for a handful of genes. We could do that by picking out specific genes of interest or selecting a range of genes:
 
-#### Using DESeq2 `plotCounts()` to plot a single gene
+#### **Using DESeq2 `plotCounts()` to plot expression of a single gene**
 
 To pick out a specific gene of interest to plot, for example Mov10, we can use the `plotCounts()` from DESeq2:
 
@@ -40,7 +40,11 @@ plotCounts(dds, gene="MOV10", intgroup="sampletype")
 ```
 ![topgene](../img/topgen_plot.png)
 
-**This function only allows for plotting the counts of a single gene at a time.** If you wish to change the appearance of this plot, we can save the output of `plotCounts()` to a variable specifying the `returnData=TRUE` argument, then use `ggplot()`:
+**This function only allows for plotting the counts of a single gene at a time.** 
+
+#### Using ggplot2 to plot expression of a single gene
+
+If you wish to change the appearance of this plot, we can save the output of `plotCounts()` to a variable specifying the `returnData=TRUE` argument, then use `ggplot()`:
 
 ```r
 # Save plotcounts to variable
