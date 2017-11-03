@@ -101,12 +101,14 @@ When we are working with large amounts of data it can be useful to display that 
 
 Let's start by loading a few libraries:
 ```r
-# load libraries
+# Load libraries
 library(DESeq2)
 library(reshape)
 library(ggplot2)
 library(ggrepel)
 library(DEGreport)
+library(RColorBrewer)
+library(pheatmap)
 ```
 
 ### Plotting signicant DE genes
