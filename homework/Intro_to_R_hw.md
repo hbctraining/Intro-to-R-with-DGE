@@ -6,7 +6,9 @@
   
   - The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR:
     
-    `install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))`
+    ```r
+    install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))
+    ```
 
   - The following packages are installed from Bioconductor: DESeq2, gage, pathview, gageData, biomaRt, org.Hs.eg.db, DOSE, SPIA. To install follow the instructions below:
     
