@@ -1,9 +1,9 @@
 # Practice with R
 ## Creating vectors/factors and dataframes
 1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
- - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the rep() function).
+ - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
  - Put them together into a dataframe called `meta`.
- - Use the rownames() function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the paste() function).
+ - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
 
  Your finished metadata table should have information for the variables "sex", "stage", "treatment", and "myc" levels: 
 
