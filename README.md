@@ -30,6 +30,10 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
+### Schedule
+
+[Click here](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/) for the schedule.
+
 ### Contents
 
 #### Introduction to R
