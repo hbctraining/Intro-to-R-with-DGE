@@ -1,31 +1,31 @@
 # Practice with R
 
-## Installing packages and loading libraries
+## Installing packages and loading libraries (mandatory for day 2)
 
 1. Within RStudio, install the following packages using the installation instructions provided below. Note that these package names are case sensitive!
+  
+  - The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR:
+    
+    `install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))`
 
-  The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR 
-
-  `install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))`
-
-  The following packages are installed from Bioconductor: DESeq2, gage, pathview, gageData, biomaRt, org.Hs.eg.db, DOSE, SPIA. To install follow the instructions below:
- 
+  - The following packages are installed from Bioconductor: DESeq2, gage, pathview, gageData, biomaRt, org.Hs.eg.db, DOSE, SPIA. To install follow the instructions below:
+    
+    ```r
+    source("http://bioconductor.org/biocLite.R") 
+    biocLite(c("DESeq2", "gage", "pathview", "gageData", "biomaRt", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
+    ```
+    
+  - To check that a package installed successfully, you should be able to load the library (without any error messages) using:
+  
   ```r
-  source("http://bioconductor.org/biocLite.R") 
-  biocLite(c("DESeq2", "gage", "pathview", "gageData", "biomaRt", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
+  library(insert_package_name)
   ```
- 
- To check that a package installed successfully, you should be able to load the library (without any error messages) using:
-
- ```r
- library(insert_package_name)
- ```
-
- Also, you should see all packages loaded when using:
-
- ```r
- sessionInfo()
- ```
+  
+  - Also, you should see all packages loaded when using:
+  
+  ```r
+  sessionInfo()
+  ```
 
 ## Creating vectors/factors and dataframes
 2. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
