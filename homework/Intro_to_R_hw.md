@@ -55,5 +55,5 @@ Write out the R code you would use to perform the following operations (question
  - return the second component of the list:
  - return "50000.0" from the first component of the list:
  - return the value "human" from the second component: 
- - give the components of the list the following names: "genome_lengths", "genomes", "record" 
+ - give the components of the list the following names: "genome_lengths", "genomes", "record":
 
