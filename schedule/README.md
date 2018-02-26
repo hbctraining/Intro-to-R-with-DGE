@@ -45,4 +45,5 @@
 |13:30 - 14:30 | [DGE Analysis: Complex Experimental Designs (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | Meeta |
 |14:30 - 15:00 | [Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Radhika |
 |15:00 - 15:15 | Break | |
-|15:15 - 17:00 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Mary |
+|15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Mary |
+|16:30 - 17:00 | [Wrap up]() | Radhika |
