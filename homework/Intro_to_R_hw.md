@@ -124,26 +124,26 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
 5. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
  
- - Write the R code you would run to return the row numbers of the samples with `MOVexpr` equal to "normal": 
+   - Write the R code you would run to return the row numbers of the samples with `MOVexpr` equal to "normal": 
 
- - Write the R code you would run to determine the number of elements in the `MOVexpr` column: 
+   - Write the R code you would run to determine the number of elements in the `MOVexpr` column: 
 
- - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
+   - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
 
 6. Now we would like to add the `MX1` and `MX3` columns to the `meta` data frame. Let's do this in steps:
 
- - Write the R code you would run to extract columns `MX1` and `MX3` from the `value_table` and to save it to a variable `mx` (hint: you will need to use the `c()` function to specify the columns you want to extract): 
+   - Write the R code you would run to extract columns `MX1` and `MX3` from the `value_table` and to save it to a variable `mx` (hint: you will need to use the `c()` function to specify the columns you want to extract): 
 
- - Using the `cbind()` function, write the R code you would use to add the columns in your `mx` variable to the end of your `meta` dataset : 
+   - Using the `cbind()` function, write the R code you would use to add the columns in your `mx` variable to the end of your `meta` dataset : 
  
- - Now, try to combine your first two actions into a single line of code using nested functions (hint: you do not need to generate the `mx` variable) to add the `MX1` and `MX3` columns to the `meta` file: 
+   - Now, try to combine your first two actions into a single line of code using nested functions (hint: you do not need to generate the `mx` variable) to add the `MX1` and `MX3` columns to the `meta` file: 
 
 7. Finally, we would like to extract only those rows from the `meta` dataset for replicate 2 from all conditions (KD.2, OE.2, IR.2). Let's do this in steps:
  
- - Write the function you would use to determine the row names of the `meta` dataset: 
+   - Write the function you would use to determine the row names of the `meta` dataset: 
 
- - Using the `which()` function, write the R code you would run to determine the location of the row name `KD.2` in the `meta` dataset: 
+   - Using the `which()` function, write the R code you would run to determine the location of the row name `KD.2` in the `meta` dataset: 
 
- - Using the `which()` function, write the R code you would use to determine the location of row names `KD.2`, `OE.2`, and `IR.2` in the `meta` dataset (use the OR operator ( | ) to return multiple locations):
+   - Using the `which()` function, write the R code you would use to determine the location of row names `KD.2`, `OE.2`, and `IR.2` in the `meta` dataset (use the OR operator ( | ) to return multiple locations):
  
- - Now, extract the rows from the `meta` dataset with row names `KD.2`, `OE.2`, and `IR.2` using a single line of code using nested functions: 
+   - Now, extract the rows from the `meta` dataset with row names `KD.2`, `OE.2`, and `IR.2` using a single line of code using nested functions: 
