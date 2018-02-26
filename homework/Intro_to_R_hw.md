@@ -1,4 +1,4 @@
-# Practice with R
+# Introduction to R practice
 
 ## Installing packages and loading libraries (mandatory for day 2)
 
@@ -89,7 +89,7 @@ Write out the R code you would use to perform the following operations (question
  - return the value "human" from the second component: 
  - give the components of the list the following names: "genome_lengths", "genomes", "record":
 
-## Nested functions (optional)
+## Nested functions
 
 Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
 
