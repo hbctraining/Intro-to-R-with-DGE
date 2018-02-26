@@ -59,3 +59,44 @@ Write out the R code you would use to perform the following operations (question
  - return the value "human" from the second component: 
  - give the components of the list the following names: "genome_lengths", "genomes", "record":
 
+## Nested functions
+
+4. Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
+
+**value_table**
+
+| |MX1|	MX2|	MX3|
+|:--: |:--:|	:--:|	:--:|
+|KD.2	|-222517.197	|-21756.82	|-16036.035|
+|KD.3	|17453.907	|-30058.14	|-25837.482|
+|OE.1	|-31247.923|	73061.38	|7019.940|
+|OE.2	|-4184.355	|61994.47	|1777.858|
+|OE.3|	147391.709	|11970.45	|-18663.686|
+|IR.1|	-32247.617	|-27896.01	|29383.153|
+|IR.2	|25456.820|	-30714.29	|19148.752|
+|IR.3	|99894.656|	-36601.04|	3207.501|
+
+**meta**
+
+
+| |sampletype|	MOVexpr|
+|:--: |:--:|	:--:|
+|KD.2|	MOV10_knockdown	|low|
+|KD.3	|MOV10_knockdown|	low|
+|OE.1	|MOV10_overexpression	|high|
+|OE.2|	MOV10_overexpression|	high|
+|OE.3	|MOV10_overexpression	|high|
+|IR.1	|siRNA|	normal|
+|IR.2	|siRNA|	normal|
+|IR.3|	siRNA	|normal|
+
+
+
+We would like to count the number of samples which have normal Mov10 expression in the meta dataset. Let's do this in steps:
+ 
+ - Write the R code you would run to return the row numbers of the samples with MOVexpr equal to "normal": 
+
+ - Write the R code you would run to determine the number of elements in the MOVexpr column: 
+
+ - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
+
