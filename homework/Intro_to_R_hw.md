@@ -4,31 +4,31 @@
 
 1. Within RStudio, install the following packages using the installation instructions provided below. Note that these package names are case sensitive!
 
- The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR 
+  The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR 
 
- `install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))`
+  `install.packages(c("RColorBrewer", "pheatmap", "gProfileR", "ggrepel", "reshape"))`
 
- The following packages are installed from Bioconductor: DESeq2, gage, pathview, gageData, biomaRt, org.Hs.eg.db, DOSE, SPIA. To install follow the instructions below:
+  The following packages are installed from Bioconductor: DESeq2, gage, pathview, gageData, biomaRt, org.Hs.eg.db, DOSE, SPIA. To install follow the instructions below:
  
+  ```r
+  source("http://bioconductor.org/biocLite.R") 
+  biocLite(c("DESeq2", "gage", "pathview", "gageData", "biomaRt", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
+  ```
+ 
+ To check that a package installed successfully, you should be able to load the library (without any error messages) using:
+
  ```r
- source("http://bioconductor.org/biocLite.R") 
- biocLite(c("DESeq2", "gage", "pathview", "gageData", "biomaRt", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
+ library(insert_package_name)
  ```
- 
-To check that a package installed successfully, you should be able to load the library (without any error messages) using:
 
-```r
-library(insert_package_name)
-```
+ Also, you should see all packages loaded when using:
 
-Also, you should see all packages loaded when using:
-
-```r
-sessionInfo()
-```
+ ```r
+ sessionInfo()
+ ```
 
 ## Creating vectors/factors and dataframes
-1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
+2. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
  - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
  - Put them together into a dataframe called `meta`.
  - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
@@ -52,7 +52,7 @@ sessionInfo()
 
  
 ## Subsetting vectors/factors and dataframes
-2. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+3. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
 
  - return only the "treatment" and "sex" columns:
  - return the "treatment" values for samples 5, 7, 9, and 10:
@@ -65,7 +65,7 @@ sessionInfo()
  - change the names of the columns to: "A", "B", "C", "D":
  
 ## Lists
-3. Create a new list, `list3` with three components, the "glengths" vector, the dataframe "df", and "number" value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
+4. Create a new list, `list3` with three components, the "glengths" vector, the dataframe "df", and "number" value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
 
 [[1]]
 [1]   4.6  3000.0 50000.0 
@@ -87,7 +87,7 @@ Write out the R code you would use to perform the following operations (question
  - return the value "human" from the second component: 
  - give the components of the list the following names: "genome_lengths", "genomes", "record":
 
-## Nested functions (extra credit)
+## Nested functions
 
 Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
 
@@ -120,7 +120,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
 
 
-4. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
+5. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
  
  - Write the R code you would run to return the row numbers of the samples with `MOVexpr` equal to "normal": 
 
@@ -128,7 +128,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
  - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
 
-5. Now we would like to add the `MX1` and `MX3` columns to the `meta` data frame. Let's do this in steps:
+6. Now we would like to add the `MX1` and `MX3` columns to the `meta` data frame. Let's do this in steps:
 
  - Write the R code you would run to extract columns `MX1` and `MX3` from the `value_table` and to save it to a variable `mx` (hint: you will need to use the `c()` function to specify the columns you want to extract): 
 
@@ -136,7 +136,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
  
  - Now, try to combine your first two actions into a single line of code using nested functions (hint: you do not need to generate the `mx` variable) to add the `MX1` and `MX3` columns to the `meta` file: 
 
-6. Finally, we would like to extract only those rows from the `meta` dataset for replicate 2 from all conditions (KD.2, OE.2, IR.2). Let's do this in steps:
+7. Finally, we would like to extract only those rows from the `meta` dataset for replicate 2 from all conditions (KD.2, OE.2, IR.2). Let's do this in steps:
  
  - Write the function you would use to determine the row names of the `meta` dataset: 
 
