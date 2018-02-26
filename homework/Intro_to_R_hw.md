@@ -1,25 +1,26 @@
 # Practice with R
 ## Creating vectors/factors and dataframes
-6. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
-Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the rep() function).
-Put them together into a dataframe called `meta`.
-Use the rownames() function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the paste() function).
-Your finished metadata table should have information for the variables "sex", "stage", "treatment", and "myc" levels: 
+1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
+ - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the rep() function).
+ - Put them together into a dataframe called `meta`.
+ - Use the rownames() function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the paste() function).
 
-| sex	| stage	| treatment	| myc |
-| :--: | :--:	| :------:	| :--: |
-sample1	M	I	A	2343
-sample2	F	II	A	457
-sample3	M	II	A	4593
-sample4	F	I	A	9035
-sample5	M	II	B	3450
-sample6	F	II	B	3524
-sample7	M	I	B	958
-sample8	F	II	B	1053
-sample9	M	II	P	8674
-sample10	F	I	P	3424
-sample11	M	II	P	463
-sample12	F	II	P	5105
+ Your finished metadata table should have information for the variables "sex", "stage", "treatment", and "myc" levels: 
+
+ | |sex	| stage	| treatment	| myc |
+ | |:--: | :--:	| :------:	| :--: |
+ |sample1|	M	|I	|A	|2343|
+ sample2	F	II	A	457
+ sample3	M	II	A	4593
+ sample4	F	I	A	9035
+ sample5	M	II	B	3450
+ sample6	F	II	B	3524
+ sample7	M	I	B	958
+ sample8	F	II	B	1053
+ sample9	M	II	P	8674
+ sample10	F	I	P	3424
+ sample11	M	II	P	463
+ sample12	F	II	P	5105
 
  
 ## Subsetting vectors/factors and dataframes
