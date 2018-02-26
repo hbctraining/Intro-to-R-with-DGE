@@ -10,17 +10,17 @@
  | |sex	| stage	| treatment	| myc |
  |:--:|:--: | :--:	| :------:	| :--: |
  |sample1|	M	|I	|A	|2343|
- sample2	F	II	A	457
- sample3	M	II	A	4593
- sample4	F	I	A	9035
- sample5	M	II	B	3450
- sample6	F	II	B	3524
- sample7	M	I	B	958
- sample8	F	II	B	1053
- sample9	M	II	P	8674
- sample10	F	I	P	3424
- sample11	M	II	P	463
- sample12	F	II	P	5105
+ |sample2|	F	|II	|A	|457|
+ |sample3	|M	|II	|A	|4593|
+ |sample4	|F	|I	|A	|9035|
+ |sample5|	M	|II	|B	|3450|
+ |sample6|	F|	II|	B|	3524|
+ |sample7|	M|	I|	B|	958|
+ |sample8|	F|	II|	B|	1053|
+ |sample9|	M|	II|	P|	8674|
+ |sample10	|F|	I	|P	|3424|
+ |sample11|	M	|II	|P	|463|
+ |sample12|	F|	II|	P|	5105|
 
  
 ## Subsetting vectors/factors and dataframes
