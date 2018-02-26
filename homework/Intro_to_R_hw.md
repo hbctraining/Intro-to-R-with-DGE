@@ -17,15 +17,15 @@
     
   - To check that a package installed successfully, you should be able to load the library (without any error messages) using:
   
-  ```r
-  library(insert_package_name)
-  ```
+    ```r
+    library(insert_package_name)
+    ```
   
   - Also, you should see all packages loaded when using:
   
-  ```r
-  sessionInfo()
-  ```
+    ```r
+    sessionInfo()
+    ```
 
 ## Creating vectors/factors and dataframes
 2. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
