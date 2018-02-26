@@ -43,13 +43,13 @@
 [1]   4.6  3000.0 50000.0 
  
 [[2]]
-     species glengths
-     
-1   ecoli       4.6
+  |   |species | glengths |
+ |:--:| :--:|   :--:|
+ |1   |ecoli    |   4.6|
 
-2   human   3000.0
+|2   |human   |3000.0|
 
-3   corn       50000.0
+|3   |corn    |   50000.0|
  
 [[3]]
 [1] 8
