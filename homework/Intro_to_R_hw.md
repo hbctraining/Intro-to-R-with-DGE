@@ -46,8 +46,11 @@
    [[2]]
     
       species glengths
+      
     1   ecoli       4.6
+    
     2   human   3000.0
+    
     3   corn       50000.0
 
    [[3]]
