@@ -8,7 +8,7 @@
  Your finished metadata table should have information for the variables "sex", "stage", "treatment", and "myc" levels: 
 
  | |sex	| stage	| treatment	| myc |
- | |:--: | :--:	| :------:	| :--: |
+ |:--:|:--: | :--:	| :------:	| :--: |
  |sample1|	M	|I	|A	|2343|
  sample2	F	II	A	457
  sample3	M	II	A	4593
