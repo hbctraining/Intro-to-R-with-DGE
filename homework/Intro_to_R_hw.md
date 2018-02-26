@@ -59,9 +59,9 @@ Write out the R code you would use to perform the following operations (question
  - return the value "human" from the second component: 
  - give the components of the list the following names: "genome_lengths", "genomes", "record":
 
-## Nested functions
+## Nested functions (extra credit)
 
-4. Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
+Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
 
 **value_table**
 
@@ -92,7 +92,7 @@ Write out the R code you would use to perform the following operations (question
 
 
 
-We would like to count the number of samples which have normal Mov10 expression in the meta dataset. Let's do this in steps:
+4. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
  
  - Write the R code you would run to return the row numbers of the samples with MOVexpr equal to "normal": 
 
@@ -100,3 +100,8 @@ We would like to count the number of samples which have normal Mov10 expression 
 
  - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
 
+5. Write the R code you would run to extract columns `MX1` and `MX3` from the value_table and to save it to a variable `mx` (hint: you will need to use the `c()` function to specify the columns you want to extract): 
+
+Using the `cbind()` function, write the R code you would use to add the columns in your `mx` variable to the end of your `meta` dataset : 
+
+Now, try to combine your first two actions into a single line of code using nested functions (hint: you do not need to generate the `mx` variable) to add the `MX1` and `MX3` columns to the `meta` file: 
