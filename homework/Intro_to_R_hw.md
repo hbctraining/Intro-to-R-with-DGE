@@ -25,10 +25,15 @@
  
 ## Subsetting vectors/factors and dataframes
 2. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+
  a. return only the "treatment" and "sex" columns:
+ 
  b. return the "treatment" values for samples 5, 7, 9, and 10:
+ 
  c. use `subset()` to return all data for those samples receiving treatment "P":
+ 
  d. use `subset()` to return only the "stage" and "treatment" data for those samples with "myc" > 5000:
+ 
  e. remove the "treatment" column from the dataset:
  f. remove samples 7, 8 and 9 from the dataset:
  g. keep only samples 1-6:
