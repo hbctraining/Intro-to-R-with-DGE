@@ -48,3 +48,9 @@
 |15:00 - 15:15 | Break | |
 |15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Mary |
 |16:30 - 17:00 | [Wrap up]() | Radhika |
+
+### Refresher files
+
+[Funtions](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/functions.txt)
+[Data Types & Data Structures](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/data_type_and_structures.txt)
+[R code from refresher](https://raw.githubusercontent.com/hbctraining/Intro-to-R-with-DGE/master/schedule/files/refresher.R)
