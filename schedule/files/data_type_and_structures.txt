@@ -1,0 +1,22 @@
+## Data Types
+
+numeric
+character
+integer
+logical
+complex
+
+## Data Structures
+
+vector
+dataframe
+factor
+list
+matrix
+
+
+## operators
+
+%in%    # "in" operator to compare elements in 2 vectors
+<-      # assignment operator
+[]      # to specify indices
