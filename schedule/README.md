@@ -51,6 +51,6 @@
 
 ### Refresher files
 
-* [Funtions](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/functions.txt)
+* [Functions](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/functions.txt)
 * [Data Types & Data Structures](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/data_type_and_structures.txt)
 * [R code from refresher](https://raw.githubusercontent.com/hbctraining/Intro-to-R-with-DGE/master/schedule/files/refresher.R)
