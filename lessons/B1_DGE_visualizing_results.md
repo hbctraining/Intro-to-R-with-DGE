@@ -47,7 +47,7 @@ res_tableOE$threshold <- threshold
 Now we can easily subset the results table to only include those that are significant using the `subset()` function:
 
 ```r
-sigOE <- data.frame(subset(res_tableOE, threshold=TRUE))
+sigOE <- data.frame(subset(res_tableOE, threshold==TRUE))
 ```
 
 Using the same thresholds as above (`padj.cutoff < 0.05` and `lfc.cutoff = 0.58`), create a threshold vector to report the number of genes that are up- and down-regulated in Mov10_knockdown compared to control.
@@ -61,7 +61,7 @@ Take this new threshold vector and add it as a new column called `threshold` to 
 ```r
 res_tableKD$threshold <- threshold_KD
 
-sigKD <- data.frame(subset(res_tableKD, threshold=TRUE))
+sigKD <- data.frame(subset(res_tableKD, threshold==TRUE))
 ``` 
 
 ## Visualizing the results
@@ -191,9 +191,11 @@ ggplot(melted_top20_sigOE) +
 
 The above plot would be great to look at the expression levels of good number of genes, but for more of a global view there are other plots we can draw. A commonly used one is a volcano plot; in which you have the log transformed adjusted p-values plotted on the y-axis and log2 fold change values on the x-axis. There is no built-in function for the volcano plot in DESeq2, but we can easily draw it using `ggplot2`. 
 
-To generate a volcano plot, we have a column in our results data indicating whether or not the gene is considered differentially expressed based on p-adjusted and log2 foldchange values.
+To generate a volcano plot, we have a column in our results data indicating whether or not the gene is considered differentially expressed based on p-adjusted and log2 foldchange values. First, we need to convert our results object into a data frame.
 
 ```r
+resOE_df <- data.frame(res_tableOE)
+
 View(resOE_df)
 ```
 
