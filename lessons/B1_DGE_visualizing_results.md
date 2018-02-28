@@ -187,9 +187,39 @@ ggplot(melted_top20_sigOE) +
 
 <img src="../img/sig_genes_melt.png" width="600">
 
+### Heatmap
+
+In addition to plotting subsets, we could also extract the normalized values of *all* the significant genes and plot a heatmap of their expression using `pheatmap()`.
+
+```r
+### Extract normalized expression for significant genes
+norm_OEsig <- normalized_counts[rownames(sigOE),]
+```
+
+Now let's draw the heatmap using `pheatmap`:
+
+```r
+### Annotate our heatmap (optional)
+annotation <- data.frame(sampletype=meta[,'sampletype'], 
+                     row.names=rownames(meta))
+
+### Set a color palette
+heat.colors <- brewer.pal(6, "YlOrRd")
+
+### Run pheatmap
+pheatmap(norm_OEsig, color = heat.colors, cluster_rows = T, show_rownames=F,
+annotation= annotation, border_color=NA, fontsize = 10, scale="row",
+     fontsize_row = 10, height=20)
+```
+         
+![sigOE_heatmap](../img/sigOE_heatmap.png)       
+
+> *NOTE:* There are several additional arguments we have included in the function for aesthetics. One important one is `scale="row"`, in which Z-scores are plotted, rather than the actual normalized count value. Z-scores are computed on a gene-by-gene basis by subtracting the mean and then dividing by the standard deviation. The Z-scores are computed **after the clustering**, so that it only affects the graphical aesthetics and the color visualization is improved.
+
+
 ### Volcano plot
 
-The above plot would be great to look at the expression levels of good number of genes, but for more of a global view there are other plots we can draw. A commonly used one is a volcano plot; in which you have the log transformed adjusted p-values plotted on the y-axis and log2 fold change values on the x-axis. There is no built-in function for the volcano plot in DESeq2, but we can easily draw it using `ggplot2`. 
+Heatmaps are great to look at the expression levels of a fairly large number of genes, but for more of a global view we can use the volcano plot. Here, the log transformed adjusted p-values are plotted on the y-axis and log2 fold change values on the x-axis. There is no built-in function for the drawing volcano plots in DESeq2, just as there is none for heatmaps, but we can easily draw it using `ggplot2`. 
 
 To generate a volcano plot, we have a column in our results data indicating whether or not the gene is considered differentially expressed based on p-adjusted and log2 foldchange values. First, we need to convert our results object into a data frame.
 
@@ -246,35 +276,6 @@ ggplot(resOE_df_ordered) +
 <img src="../img/volcanoplot-2.png" width="500"> 
 
 The `ifelse()` function is a simple function that outputs a vector if a certain condition is T. In the above example, it checks if the value in the `resOE_df_ordered$genelevel` column is TRUE, in which case it will output the row name for that row (`rownames(resOE_df_ordered)`). If the value in the genelevel column is FALSE it will output nothing (`""`). This is good way to inform `geom_point()` about genes we want labeled.
-
-### Heatmap
-
-Alternatively, we could extract only the genes that are identified as significant and the plot the expression of those genes using a heatmap:
-
-```r
-### Extract normalized expression for significant genes
-norm_OEsig <- normalized_counts[rownames(sigOE),]
-```
-
-Now let's draw the heatmap using `pheatmap`:
-
-```r
-### Annotate our heatmap (optional)
-annotation <- data.frame(sampletype=meta[,'sampletype'], 
-                     row.names=rownames(meta))
-
-### Set a color palette
-heat.colors <- brewer.pal(6, "YlOrRd")
-
-### Run pheatmap
-pheatmap(norm_OEsig, color = heat.colors, cluster_rows = T, show_rownames=F,
-annotation= annotation, border_color=NA, fontsize = 10, scale="row",
-     fontsize_row = 10, height=20)
-```
-         
-![sigOE_heatmap](../img/sigOE_heatmap.png)       
-
-> *NOTE:* There are several additional arguments we have included in the function for aesthetics. One important one is `scale="row"`, in which Z-scores are plotted, rather than the actual normalized count value. Z-scores are computed on a gene-by-gene basis by subtracting the mean and then dividing by the standard deviation. The Z-scores are computed **after the clustering**, so that it only affects the graphical aesthetics and the color visualization is improved.
 
 
 ***
