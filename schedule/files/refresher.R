@@ -1,3 +1,6 @@
+## Feb 27, 2018
+## https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html
+
 Animals <- read.csv("data/animals.csv")
 
 # Question 1
