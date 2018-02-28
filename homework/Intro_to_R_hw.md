@@ -2,6 +2,13 @@
 
 ## Installing packages and loading libraries (mandatory for day 2)
 
+In class: 
+
+    ```r
+    source("http://bioconductor.org/biocLite.R") 
+    biocLite(c("devtools", "stephenturner/annotables"))
+    ```
+    
 1. Within RStudio, install the following packages using the installation instructions provided below. Note that these package names are case sensitive!
   
   - The following packages are installed from CRAN: RColorBrewer, pheatmap, gProfileR:
@@ -14,7 +21,7 @@
     
     ```r
     source("http://bioconductor.org/biocLite.R") 
-    biocLite(c("DESeq2", "gage", "pathview", "gageData", "biomaRt", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
+    biocLite(c("DESeq2", "gage", "pathview", "gageData", "devtools", "stephenturner/annotables", "org.Hs.eg.db", "DOSE", "SPIA", "clusterProfiler", "DEGreport"))
     ```
     
   - To check that a package installed successfully, you should be able to load the library (without any error messages) using:
