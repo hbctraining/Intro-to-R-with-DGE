@@ -4,7 +4,7 @@
 
 1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
      - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
-     - Put them together into a dataframe called `meta`.
+     - Put them together into a dataframe called `metadata`.
      - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
 
      Your finished metadata table should have information for the variables `sex`, `stage`, `treatment`, and `myc` levels: 
@@ -27,7 +27,7 @@
  
 ## Subsetting vectors/factors and dataframes
 
-2. Using the metadata table from question #1, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+2. Using the `metadata` data frame from question #1, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
 
      - return only the `treatment` and `sex` columns:
      - return the `treatment` values for samples 5, 7, 9, and 10:
@@ -46,11 +46,10 @@
           [1]   4.6  3000.0 50000.0 
 
           [[2]]
-            |   |species | glengths |
-            |:--:| :--:|   :--:|
-            |1   |ecoli    |   4.6|
-            |2   |human   |3000.0|
-            |3   |corn    |   50000.0|
+                 species  glengths 
+            1    ecoli    4.6
+            2    human    3000.0
+            3    corn     50000.0
 
           [[3]]
           [1] 8
@@ -65,21 +64,20 @@ Write out the R code you would use to perform the following operations (question
 
 Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
 
-     **value_table**
+**value_table**
 
-     | |MX1|	MX2|	MX3|
-     |:--: |:--:|	:--:|	:--:|
-     |KD.2	|-222517.197	|-21756.82	|-16036.035|
-     |KD.3	|17453.907	|-30058.14	|-25837.482|
-     |OE.1	|-31247.923|	73061.38	|7019.940|
-     |OE.2	|-4184.355	|61994.47	|1777.858|
-     |OE.3|	147391.709	|11970.45	|-18663.686|
-     |IR.1|	-32247.617	|-27896.01	|29383.153|
-     |IR.2	|25456.820|	-30714.29	|19148.752|
-     |IR.3	|99894.656|	-36601.04|	3207.501|
+| |MX1|	MX2|	MX3|
+|:--: |:--:|	:--:|	:--:|
+|KD.2	|-222517.197	|-21756.82	|-16036.035|
+|KD.3	|17453.907	|-30058.14	|-25837.482|
+|OE.1	|-31247.923|	73061.38	|7019.940|
+|OE.2	|-4184.355	|61994.47	|1777.858|
+|OE.3|	147391.709	|11970.45	|-18663.686|
+|IR.1|	-32247.617	|-27896.01	|29383.153|
+|IR.2	|25456.820|	-30714.29	|19148.752|
+|IR.3	|99894.656|	-36601.04|	3207.501|
 
 **meta**
-
 
 | |sampletype|	MOVexpr|
 |:--: |:--:|	:--:|
