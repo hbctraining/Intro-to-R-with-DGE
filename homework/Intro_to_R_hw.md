@@ -1,12 +1,13 @@
 # Introduction to R practice
 
 ## Creating vectors/factors and dataframes
-2. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
+
+1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
      - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
      - Put them together into a dataframe called `meta`.
      - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
 
- Your finished metadata table should have information for the variables `sex`, `stage`, `treatment`, and `myc` levels: 
+     Your finished metadata table should have information for the variables `sex`, `stage`, `treatment`, and `myc` levels: 
 
      | |sex	| stage	| treatment	| myc |
      |:--:|:--: | :--:	| :------:	| :--: |
@@ -26,7 +27,7 @@
  
 ## Subsetting vectors/factors and dataframes
 
-3. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+2. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
 
      - return only the `treatment` and `sex` columns:
      - return the `treatment` values for samples 5, 7, 9, and 10:
@@ -39,7 +40,7 @@
      - change the names of the columns to: "A", "B", "C", "D":
  
 ## Lists
-4. Create a new list, `list3` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
+3. Create a new list, `list3` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
 
      [[1]]
      [1]   4.6  3000.0 50000.0 
@@ -94,7 +95,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
 
 
-5. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
+4. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
  
    - Write the R code you would run to return the row numbers of the samples with `MOVexpr` equal to "normal": 
 
@@ -102,7 +103,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
    - Now, try to combine your first two actions into a single line of code using nested functions to determine the number of elements in the MOVexpr column with expression levels of MOV10 being normal: 
 
-6. Now we would like to add the `MX1` and `MX3` columns to the `meta` data frame. Let's do this in steps:
+5. Now we would like to add the `MX1` and `MX3` columns to the `meta` data frame. Let's do this in steps:
 
    - Write the R code you would run to extract columns `MX1` and `MX3` from the `value_table` and to save it to a variable `mx` (hint: you will need to use the `c()` function to specify the columns you want to extract): 
 
@@ -110,7 +111,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
  
    - Now, try to combine your first two actions into a single line of code using nested functions (hint: you do not need to generate the `mx` variable) to add the `MX1` and `MX3` columns to the `meta` file: 
 
-7. Finally, we would like to extract only those rows from the `meta` dataset for replicate 2 from all conditions (KD.2, OE.2, IR.2). Let's do this in steps:
+6. Finally, we would like to extract only those rows from the `meta` dataset for replicate 2 from all conditions (KD.2, OE.2, IR.2). Let's do this in steps:
  
    - Write the function you would use to determine the row names of the `meta` dataset: 
 
