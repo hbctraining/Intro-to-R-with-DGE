@@ -42,19 +42,18 @@
 ## Lists
 3. Create a new list, `list3` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
 
-     [[1]]
-     [1]   4.6  3000.0 50000.0 
+          [[1]]
+          [1]   4.6  3000.0 50000.0 
 
-     [[2]]
+          [[2]]
+            |   |species | glengths |
+            |:--:| :--:|   :--:|
+            |1   |ecoli    |   4.6|
+            |2   |human   |3000.0|
+            |3   |corn    |   50000.0|
 
-       |   |species | glengths |
-       |:--:| :--:|   :--:|
-       |1   |ecoli    |   4.6|
-       |2   |human   |3000.0|
-       |3   |corn    |   50000.0|
-
-     [[3]]
-     [1] 8
+          [[3]]
+          [1] 8
 
 Write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
  - return the second component of the list:
