@@ -27,7 +27,7 @@
  
 ## Subsetting vectors/factors and dataframes
 
-2. Using the metadata table from question #6, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+2. Using the metadata table from question #1, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
 
      - return only the `treatment` and `sex` columns:
      - return the `treatment` values for samples 5, 7, 9, and 10:
