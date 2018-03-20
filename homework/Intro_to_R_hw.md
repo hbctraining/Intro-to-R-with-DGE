@@ -120,7 +120,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
    
 ## Creating figures with ggplot2
 
-![plot_image](plot_counts.png)
+![plot_image](plotcounts.png)
 
 7. This new [metadata table](https://github.com/hbc/Intro-to-R-2-day/raw/master/data/Mov10_full_meta.txt) describes an experiment that you have setup for RNA-seq analysis, while the [associated count matrix](https://github.com/hbc/Intro-to-R-2-day/raw/master/data/normalized_counts.txt) gives the normalized counts for each sample for every gene. Download the count matrix and metadata using the links provided.
 
