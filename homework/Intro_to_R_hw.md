@@ -39,7 +39,7 @@
      - add a column called `pre_treatment` to the beginning of the dataframe with the values T, F, F, F, T, T, F, T, F, F, T, T (Hint: use `cbind()`): 
      - change the names of the columns to: "A", "B", "C", "D":
  
-## Lists
+## Extracting components from lists
 3. Create a new list, `list3` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list3` has the following structure (NOTE: the components of this list are not currently named):
 
           [[1]]
@@ -104,7 +104,7 @@ Write out the R code you would use to perform the following operations (question
 
                - Change the size of the axis text only on the y-axis to 1.25x the default size
 
-## Nested functions (optional)
+## Practice with nested functions (optional)
 
 Let's derive some nested functions similar to those we will use in our RNA-Seq analysis. The following dataframes, `value_table` and `meta`, should be used to address the questions below (you do not actually need to create these dataframes):
 
