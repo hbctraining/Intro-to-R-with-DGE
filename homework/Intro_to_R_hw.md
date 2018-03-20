@@ -117,3 +117,46 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
    - Using the `which()` function, write the R code you would use to determine the location of row names `KD.2`, `OE.2`, and `IR.2` in the `meta` dataset (use the OR operator ( | ) to return multiple locations):
  
    - Now, extract the rows from the `meta` dataset with row names `KD.2`, `OE.2`, and `IR.2` using a single line of code using nested functions: 
+   
+   
+7. This new [metadata table](https://github.com/hbc/Intro-to-R-2-day/raw/master/data/Mov10_full_meta.txt) describes an experiment that you have setup for RNA-seq analysis, while the [associated count matrix](https://github.com/hbc/Intro-to-R-2-day/raw/master/data/normalized_counts.txt) gives the normalized counts for each sample for every gene. Download the count matrix and metadata using the links provided.
+
+     Create the same plot as above using ggplot2. Follow the instructions below to build your plot. Write the code you used and provide the final image.
+
+     - Read in the metadata file using: `meta <- read.delim("Mov10_full_meta.txt", sep="\t", row.names=1)`
+
+     - Read in the count matrix file using: `data <- read.delim("normalized_counts.txt", sep="\t", row.names=1)`
+
+     - Create a vector called `expression` that contains the normalized count values from the row in normalized_counts that corresponds to the MOV10 gene.  
+
+     - Check the class of this expression vector. You will need to convert this to a numeric vector using `as.numeric(expression)`
+
+     - Bind that vector to your metadata data frame (`meta`) and call the new data frame `df`. 
+
+     - Create a ggplot by constructing the plot line by line:
+     
+          - Initialize a  ggplot with your `df` as input.
+
+          - Add the `geom_jitter()` geometric object with the required aesthetics which are x and y.
+
+          - Color the points based on `sampletype`
+
+          - Add the `theme_bw()` layer 
+
+          - Add the title “Expression of MOV10” to the plot
+
+          - Change the x-axis label to be blank
+
+          - Change the y-axis label to “Normalized counts”
+
+          - Using `theme()` change the following properties of the plot:
+
+               - Remove the legend (Hint: use ?theme help and scroll down to legend.position)
+
+               - Change the plot title size to 1.5x the default
+
+               - Change the axis title to 1.5x the default size
+
+               - Change the size of the axis text only on the y-axis to 1.25x the default size
+
+
