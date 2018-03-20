@@ -136,7 +136,7 @@ Let's derive some nested functions similar to those we will use in our RNA-Seq a
 
 
 
-4. We would like to count the number of samples which have normal Mov10 expression (MOVexpr) in the `meta` dataset. Let's do this in steps:
+4. We would like to count the number of samples which have normal Mov10 expression (`MOVexpr`) in the `meta` dataset. Let's do this in steps:
  
    - Write the R code you would run to return the row numbers of the samples with `MOVexpr` equal to "normal": 
 
