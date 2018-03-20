@@ -16,7 +16,6 @@
 |14:45 - 15:00 | Break | |
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Meeta |
 |16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
-| |[Day 1 homework](https://hbctraining.github.io/Intro-to-R-with-DGE/homework/Intro_to_R_hw.html)| |
 
 ## Day 2
 
