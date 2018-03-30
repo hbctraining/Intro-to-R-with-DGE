@@ -60,7 +60,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Visualization of DGE analysis results](https://hbctraining.github.io/Intro-to-R-with-DGE/lessons/B1_DGE_visualizing_results.html) | 45 min |
 |[Summary of DGE workflow](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | 15 min |
 |[Complex designs with DESeq2 (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | 30 min |
-|[Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | 85 min |
+|[Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | 85 min |
 
 ***
 
