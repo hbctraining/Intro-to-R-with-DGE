@@ -46,7 +46,8 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 |[Data wrangling: subsetting vectors and factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.html) | 65 min |
 |[Data wrangling: subsetting data frames, matrices and lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | 75 min |
 |[Matching and reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | 90 min |
-|[Data visualization with ggplot2](https://hbctraining.github.io/Intro-to-R/lessons/07_ggplot2.html) | 60 min |
+|[Introduction to Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/07_intro_tidyverse.html) | 60 min |
+|[Data visualization with ggplot2](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | 60 min |
 
 #### Differential Gene Expression (DGE) using RNA-seq raw counts data
 
