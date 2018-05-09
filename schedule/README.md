@@ -25,7 +25,7 @@
 |09:45 - 10:30 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
 |10:30 - 10:45 | Break | |
 |10:45 - 11:15 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
-|11:15 - 12:30 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/07_ggplot2.html) | Radhika |
+|11:15 - 12:30 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
@@ -43,9 +43,9 @@
 |12:15 - 12:30 | [DGE Workflow Summary](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [DGE Analysis: Complex Experimental Designs (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | Meeta |
-|14:30 - 15:00 | [Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Radhika |
+|14:30 - 15:00 | [Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Radhika |
 |15:00 - 15:15 | Break | |
-|15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/09_functional_analysis.html) | Mary |
+|15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Mary |
 |16:30 - 17:00 | [Wrap up](https://hbctraining.github.io/Intro-to-R-with-DGE/lectures/R%20Workshop%20wrapup.pdf) | Radhika |
 
 ### Refresher files
