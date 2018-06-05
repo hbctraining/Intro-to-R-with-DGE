@@ -15,14 +15,14 @@
 |13:45 - 14:45 | [Data Wrangling: Subsetting Vectors and Factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.html) | Radhika |
 |14:45 - 15:00 | Break | |
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Meeta |
-|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
+|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
 
 ## Day 2
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 |09:00 - 09:45 | [Refresher](https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html) | Mary/Meeta |
-|09:45 - 10:30 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
+|09:45 - 10:30 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
 |10:30 - 10:45 | Break | |
 |10:45 - 11:15 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
 |11:15 - 12:30 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
