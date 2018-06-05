@@ -14,18 +14,18 @@
 |13:10 - 13:45 | [Packages and Libraries](https://hbctraining.github.io/Intro-to-R/lessons/03_introR-functions-and-arguments.html) | Meeta |
 |13:45 - 14:45 | [Data Wrangling: Subsetting Vectors and Factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.html) | Radhika |
 |14:45 - 15:00 | Break | |
-|15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Meeta |
-|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
+|15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Mary |
+|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Meeta |
 
 ## Day 2
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 |09:00 - 09:45 | [Refresher](https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html) | Mary/Meeta |
-|09:45 - 10:30 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
-|10:30 - 10:45 | Break | |
-|10:45 - 11:15 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
-|11:15 - 12:30 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
+|09:45 - 10:45 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
+|10:45 - 10:55 | Break | |
+|10:55 - 12:30 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
+|10:45 - 11:15 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
