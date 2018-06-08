@@ -21,12 +21,12 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-|09:00 - 09:45 | [Refresher](https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html) | Mary/Meeta |
-|09:45 - 10:45 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
-|10:45 - 10:55 | Break | |
-|10:55 - 12:15 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
-|12:15 - 13:15 | Lunch | |
-|13:15 - 13:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
+|09:00 - 09:30 | [Refresher](https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html) | Mary/Meeta |
+|09:30 - 10:30 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
+|10:30 - 10:40 | Break | |
+|10:40 - 11:45 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
+|11:45 - 12:45 | Lunch | |
+|12:45 - 13:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/06_advR-matching.html) | Mary |
 |13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
 |15:15 - 15:30 | Break | |
