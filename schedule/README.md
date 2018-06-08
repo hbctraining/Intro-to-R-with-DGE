@@ -46,7 +46,7 @@
 |14:30 - 15:00 | [Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Radhika |
 |15:00 - 15:15 | Break | |
 |15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Mary |
-|16:30 - 17:00 | [Wrap up](https://hbctraining.github.io/Intro-to-R-with-DGE/lectures/R%20Workshop%20wrapup.pdf) | Radhika |
+|16:30 - 17:00 | [Wrap up](https://hbctraining.github.io/Intro-to-R-with-DGE/lectures/Workshop_wrapup.pdf) | Radhika |
 
 ### Refresher files
 
