@@ -25,7 +25,7 @@
 |09:30 - 10:30 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
 |10:30 - 10:40 | Break | |
 |10:40 - 11:45 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
-|11:45 - 12:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/tidyverse_data_wrangling.html) | Meeta |
+|11:45 - 12:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/07_intro_tidyverse.html) | Meeta |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
