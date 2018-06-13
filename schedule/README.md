@@ -17,7 +17,7 @@
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Mary |
 |16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Meeta |
 
-**Homework:** [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#installation-requirements)
+**Homework:** [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#packages-to-be-installed)
 
 ## Day 2
 
@@ -50,11 +50,12 @@
 |15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Mary |
 |16:30 - 17:00 | [Wrap up](https://hbctraining.github.io/Intro-to-R-with-DGE/lectures/Workshop_wrapup.pdf) | Radhika |
 
-### Links to refresher files and practice questions  
+### Links to refresher files and practice exercises  
 
 > Note: Some links are specific to files from recent workshops, and may or may not be active.
 
-* [Practice exercises](https://hbctraining.github.io/Intro-to-R-with-DGE/homework/Intro_to_R_hw.html)
+* [Practice exercises](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises.html) & [Answer Key](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises%20answer_key.html).
+
 * [Day2 refresher]()
 * [R script from first half (intro to R)]()
 * [R script from DE analysis]()
