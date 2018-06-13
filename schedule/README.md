@@ -55,7 +55,6 @@
 > Note: Some links are specific to files from recent workshops, and may or may not be active.
 
 * [Practice exercises](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises.html) & [Answer Key](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises%20answer_key.html).
-
 * [Day2 refresher]()
 * [R script from first half (intro to R)]()
 * [R script from DE analysis]()
