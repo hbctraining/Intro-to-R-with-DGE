@@ -65,7 +65,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 ***
 
-### [Installation Requirements](installation-requirements)
+### Installation Requirements
 
 Download the most recent versions of R and RStudio for your laptop:
 
