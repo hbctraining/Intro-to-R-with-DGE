@@ -17,6 +17,10 @@
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Mary |
 |16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Meeta |
 
+**Homework:**
+
+* [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#installation-requirements)
+
 ## Day 2
 
 | Time            |  Topic  | Instructor |
@@ -40,7 +44,7 @@
 |10:00 - 10:15 | Break | |
 |10:15 - 11:00 | [DGE Analysis: Pairwise Comparisons (Wald Test)](https://hbctraining.github.io/DGE_workshop/lessons/05_DGE_DESeq2_analysis2.html) | Meeta |
 |11:00 - 12:15 | [DGE Results Summarization and Visualization](https://hbctraining.github.io/DGE_workshop/lessons/06_DGE_visualizing_results.html) | Radhika |
-|12:15 - 12:30 | [DGE Workflow Summary](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | |
+|12:15 - 12:30 | [DGE Workflow Summary](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | Mary |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [DGE Analysis: Complex Experimental Designs (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | Meeta |
 |14:30 - 15:00 | [Functional Analysis](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Radhika |
@@ -48,9 +52,11 @@
 |15:15 - 16:30 | [Functional Analysis (contd.)](https://hbctraining.github.io/DGE_workshop/lessons/10_functional_analysis.html) | Mary |
 |16:30 - 17:00 | [Wrap up](https://hbctraining.github.io/Intro-to-R-with-DGE/lectures/Workshop_wrapup.pdf) | Radhika |
 
-### Refresher files
+### Links to refresher files and practice questions  
 
-* [Functions](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/functions.txt)
-* [Data Types & Data Structures](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/data_type_and_structures.txt)
-* [R code from refresher](https://raw.githubusercontent.com/hbctraining/Intro-to-R-with-DGE/master/schedule/files/refresher.R)
-* [R script from first half (intro to R)](https://raw.githubusercontent.com/hbctraining/Intro-to-R-with-DGE/master/schedule/files/intro_r.R)
+> Note: Some links are specific to files from recent workshops, and may or may not be active.
+
+* [Practice exercises](https://hbctraining.github.io/Intro-to-R-with-DGE/homework/Intro_to_R_hw.html)
+* [Day2 refresher]()
+* [R script from first half (intro to R)]()
+* [R script from DE analysis]()
