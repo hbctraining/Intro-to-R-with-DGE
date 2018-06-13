@@ -67,14 +67,20 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 ### Installation Requirements
 
+#### Basic installations to be done before class
+
 Download the most recent versions of R and RStudio for your laptop:
 
  - [R](http://lib.stat.cmu.edu/R/CRAN/) 
  - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
- 
-Note:  When installing the following packages, if you are asked to select (a/s/n) or (y/n), please select “a” or "y" as applicable.
 
-(1) Install the below packages on your laptop from CRAN. You DO NOT have to go to the CRAN webpage; you can use the following function to install them one by one:
+#### Packages to be installed 
+
+> *NOTE 1:* These packages are necessary for the Differential Gene Expression (DGE) analysis section
+> 
+> *NOTE 2:*  When installing the following packages, if you are asked to select (a/s/n) or (y/n), please select “a” (all) or "y" (yes) as applicable.
+
+(1) Install the packages below from CRAN. You DO NOT have to go to the CRAN webpage; you can use the `install.packages` function to install them one at a time:
 
 ```r
 install.packages("insert_package_name_in_quotations")
@@ -82,7 +88,7 @@ install.packages("insert_package_name_in_quotations")
 & so on ...
 ```
 
-Note that these package names are case sensitive!
+*Note that these package names are case sensitive!*
 
 ```r
 RColorBrewer
@@ -92,7 +98,7 @@ devtools
 cowplot
 ```
 
-(2) Install the below packages from Bioconductor. Run the `source()` function once, followed by the `biocLite()` function 9 times for the 9 packages:
+(2) Install the packages below from Bioconductor. Run `source("http://bioconductor.org/biocLite.R")` only once, followed by the `biocLite()` function once for each package:
 
 ```r
 source("http://bioconductor.org/biocLite.R") 
@@ -101,7 +107,7 @@ biocLite("insert_second_package_name_in_quotations")
 & so on ...
 ```
 
-Note that these package names are case sensitive!
+*Once more, please note that these package names are case sensitive!*
 
 ```r
 DESeq2
@@ -114,7 +120,9 @@ rhdf5
 tximport
 ```
 
-(3) Use a new method of installation from GitHub to install the below packages using the following code:
+(3) Use a new method (not covered in class) of installation from GitHub to install the below packages using the following code:
+
+> *NOTE:* You will need to have installed the `devtools` package before you do this, it is in the list of packages you need to get from CRAN (see point (1) above).
 
 ```r
 devtools::install_github("insert_package_name_in_quotations")
@@ -126,7 +134,7 @@ pachterlab/sleuth
 COMBINE-lab/wasabi
 ```
 
-(4) Finally, please check that all the packages were installed successfully by loading them one at a time using the library() function.  
+(4) Finally, please check that all the packages were installed successfully by loading them one at a time using the `library()` function.  
 
 ```r
 library(DESeq2)
@@ -148,11 +156,8 @@ library(wasabi)
 library(sleuth)
 ```
 
-(5) Once all packages have been loaded, run sessionInfo().  
+> *NOTE:* You can check which libraries loaded successfully by running `sessionInfo()`.   
 
-```r
-sessionInfo()
-```
 
 ### Practical exercises
 After completion of the workshop, practice of concepts can be explored with [these exercises](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises.html). An answer key is [available](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises%20answer_key.html) to check answers.
