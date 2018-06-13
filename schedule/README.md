@@ -17,9 +17,7 @@
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Mary |
 |16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Meeta |
 
-**Homework:**
-
-* [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#installation-requirements)
+**Homework:** [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#installation-requirements)
 
 ## Day 2
 
