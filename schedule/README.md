@@ -39,7 +39,7 @@
 |09:00 - 10:00 | [Overview of DESeq2 Methods](https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html) | Mary |
 |10:00 - 10:15 | Break | |
 |10:15 - 11:00 | [DGE Analysis: Pairwise Comparisons (Wald Test)](https://hbctraining.github.io/DGE_workshop/lessons/05_DGE_DESeq2_analysis2.html) | Meeta |
-|11:00 - 12:15 | [DGE Results Summarization and Visualization](https://hbctraining.github.io/Intro-to-R-with-DGE/lessons/B1_DGE_visualizing_results.html) | Radhika |
+|11:00 - 12:15 | [DGE Results Summarization and Visualization](https://hbctraining.github.io/DGE_workshop/lessons/06_DGE_visualizing_results.html) | Radhika |
 |12:15 - 12:30 | [DGE Workflow Summary](https://hbctraining.github.io/DGE_workshop/lessons/07_DGE_summarizing_workflow.html) | |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [DGE Analysis: Complex Experimental Designs (LRT)](https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html) | Meeta |
