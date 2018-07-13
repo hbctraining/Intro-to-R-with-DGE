@@ -29,10 +29,10 @@
 |10:40 - 11:45 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
 |11:45 - 12:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/07_intro_tidyverse.html) | Meeta |
 |12:30 - 13:30 | Lunch | |
-|13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
+|13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Mary |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
 |15:15 - 15:30 | Break | |
-|15:30 - 17:00 | [Setting up for DGE Analysis: Count Data QC](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html) | Mary |
+|15:30 - 17:00 | [Setting up for DGE Analysis: Count Data QC](https://hbctraining.github.io/DGE_workshop/lessons/03_DGE_QC_analysis.html) | Meeta |
 
 ## Day 3
 
