@@ -55,4 +55,9 @@
 > Note: Some links are specific to files from recent workshops, and may or may not be active.
 
 * [Practice exercises](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises.html) & [Answer Key](https://hbctraining.github.io/DGE_workshop/exercises/DGE_analysis_exercises%20answer_key.html).
+* Download the animals.csv file to the "data/" folder in your project directory by right-clicking [on this link](https://github.com/hbctraining/Intro-to-R/blob/master/data/animals.csv)
+* [Refresher R code (using the animals data frame)](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/PQG_2018/Day2_refresher.R)
+* [Intro to R script](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/PQG_2018/intro-to-r.R)
+* [DE analysis script](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/PQG_2018/de_script.R)
+* [Functional analysis script](https://hbctraining.github.io/Intro-to-R-with-DGE/schedule/files/PQG_2018/functional_analysis.R)
 
