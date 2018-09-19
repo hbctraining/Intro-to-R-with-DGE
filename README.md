@@ -110,14 +110,13 @@ biocLite("insert_second_package_name_in_quotations")
 *Once more, please note that these package names are case sensitive!*
 
 ```r
-DESeq2
+DESeq2 and tximport (please install these as a priority)
 clusterProfiler
 DOSE
 org.Hs.eg.db
 pathview
 DEGreport
 rhdf5
-tximport
 ```
 
 (3) Use a new method (not covered in class) of installation from GitHub to install the below packages using the following code:
