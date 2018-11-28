@@ -22,10 +22,10 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
 4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
 5. **Differential expression analysis for RNA-seq data:**
-  - Perform QC on count data
-  - Use DESeq2 to obtain a list of significantly differentially expressed genes
-  - Visualize expression patterns of differentially expressed genes
-  - Perform functional analysis on gene lists with R-based tools
+    - Perform QC on count data
+    - Use DESeq2 to obtain a list of significantly differentially expressed genes
+    - Visualize expression patterns of differentially expressed genes
+    - Perform functional analysis on gene lists with R-based tools
 
 > These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
 
@@ -40,7 +40,7 @@ This workshop is intended to provide both basic R programming knowledge AND its 
 
 (1) Download the most recent versions of R and RStudio for your laptop:
 
- - [R](http://lib.stat.cmu.edu/R/CRAN/) 
+ - [R](https://cran.r-project.org/) 
  - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 
 (2) Packages to be installed:
