@@ -15,7 +15,7 @@
 |13:45 - 14:45 | [Data Wrangling: Subsetting Vectors and Factors](https://hbctraining.github.io/Intro-to-R/lessons/04_introR-data-wrangling.html) | Radhika |
 |14:45 - 15:00 | Break | |
 |15:00 - 16:15 | [Data Wrangling: Subsetting Data Frames, Matrices, and Lists](https://hbctraining.github.io/Intro-to-R/lessons/05_introR-data-wrangling2.html) | Mary |
-|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Meeta |
+|16:15 - 17:00 | [Matching and Reordering](https://hbctraining.github.io/Intro-to-R/lessons/06_matching_reordering.html) | Meeta |
 
 **Homework:** [Package installations for days 2 & 3](https://hbctraining.github.io/Intro-to-R-with-DGE/#packages-to-be-installed)
 
@@ -24,10 +24,10 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 |09:00 - 09:30 | [Refresher](https://hbctraining.github.io/Intro-to-R/lessons/animal_table.html) | Meeta |
-|09:30 - 10:30 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/matching_shortened.html) | Mary |
+|09:30 - 10:30 | [Matching and Reordering (contd.)](https://hbctraining.github.io/Intro-to-R/lessons/06_matching_reordering.html#reordering-data-using-indices) | Mary |
 |10:30 - 10:40 | Break | |
-|10:40 - 11:45 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/08_ggplot2.html) | Radhika |
-|11:45 - 12:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/07_intro_tidyverse.html) | Meeta |
+|10:40 - 11:45 | [Data Visualization with R](https://hbctraining.github.io/Intro-to-R/lessons/07_ggplot2.html) | Radhika |
+|11:45 - 12:30 | [Tidyverse](https://hbctraining.github.io/Intro-to-R/lessons/08_intro_tidyverse.html) | Meeta |
 |12:30 - 13:30 | Lunch | |
 |13:30 - 14:30 | [Overview of DGE Analysis Workflow](https://hbctraining.github.io/DGE_workshop/lessons/01_DGE_setup_and_overview.html) | Meeta |
 |14:30 - 15:15 | [Setting up for DGE Analysis: Count Normalization](https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html) | Radhika |
