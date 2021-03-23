@@ -1,3 +1,5 @@
+**THIS REPO IS ARCHIVED, PLEASE GO TO [https://hbctraining.github.io/main](https://hbctraining.github.io/main) FOR CURRENT LESSONS.**
+
 ## Introduction to R and differential gene expression (DGE) analysis
 
 | Audience | Computational Skills | Prerequisites | Duration |
